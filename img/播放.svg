@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>编组 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ModelBox" transform="translate(-504.000000, -2385.000000)" fill="#FFFFFF">
+            <g id="编组-7" transform="translate(504.000000, 2385.000000)">
+                <circle id="椭圆形" opacity="0.200000003" cx="24" cy="24" r="24"></circle>
+                <path d="M28.6959966,18.7135946 L35.0875013,28.9400021 C35.672922,29.8766752 35.3881757,31.1105759 34.4515026,31.6959966 C34.1336394,31.8946611 33.7663442,32 33.3915047,32 L20.6084953,32 C19.5039258,32 18.6084953,31.1045695 18.6084953,30 C18.6084953,29.6251606 18.7138342,29.2578653 18.9124987,28.9400021 L25.3040034,18.7135946 C25.8894241,17.7769215 27.1233248,17.4921752 28.0599979,18.0775958 C28.3175361,18.2385573 28.5350352,18.4560563 28.6959966,18.7135946 Z" id="三角形" transform="translate(27.000000, 24.000000) rotate(-270.000000) translate(-27.000000, -24.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
