@@ -1,244 +1,199 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-        <title>ModelBox</title>
-        <link rel="stylesheet" type="text/css" href="css/modelbox.css" />
-    </head>
-
+    <head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>ModelBox</title><link rel="stylesheet" type="text/css" href="css/modelbox.css" /><script src="js/modelbox.js"></script></head>
     <body>
         <div class="model-box-content">
-
             <div class="navigation width-rate">
-                <div class="navigation-item navigation-selected" obj-id="advantage" style="margin-left: 0">����</div>
-                <div class="navigation-item" obj-id="forWho">���ö���</div>
-                <div class="navigation-item" obj-id="devSample">����ʾ��</div>
-                <div class="navigation-item" obj-id="vedioTutorial">��ѧ��Ƶ</div>
-                <div class="navigation-item" obj-id="funList">�����б�</div>
-                <div class="navigation-item" obj-id="devCourse">�����̳�</div>
+                <div class="navigation-item navigation-selected" obj-id="advantage" style="margin-left: 0">优势</div><div class="navigation-item" obj-id="forWho">适用对象</div><div class="navigation-item" obj-id="devSample">开发示例</div><div class="navigation-item" obj-id="vedioTutorial">教学视频</div><div class="navigation-item" obj-id="funList">功能列表</div><div class="navigation-item" obj-id="devCourse">开发教程</div>
             </div>
-
             <div class="banner">
                 <div class="banner-placeholder"></div>
                 <div class="padding-rate banner-title">ModelBox</div>
-                <div class="padding-rate banner-content">ModelBox��һ��ͳһ�Ķ˱���AIӦ�ÿ��������п�ܵĹ淶���Լ��ڴ˹淶����ʵ�ֵ�����ʱ��ܡ��ڴ˻����ϣ������뷽�ɹ�����صĹ��ߡ�ƽ̨���ĵ���������ݡ�</div>
+                <div class="padding-rate banner-content">ModelBox是一套统一的端边云AI应用开发和运行框架的规范，以及在此规范上所实现的运行时框架。在此基础上，各参与方可贡献相关的代码、工具、平台、文档等相关内容。</div>
                 <div class="banner-button padding-rate width-rate">
-                    <button class="banner-button-use">����ʹ��</button>
-                    <button class="banner-button-details">�鿴����</button>
+                    <button class="banner-button-use">立即使用</button>
+                    <button class="banner-button-details">使用介绍</button>
                 </div>
             </div>
-
             <div class="content-gap width-rate advantage" id="advantage">
-                <div class="content-item-title">ModelBox����</div>
+                <div class="content-item-title">ModelBox优势</div>
                 <div class="advantage-content-line">
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-quick.png')"></div>
-                        <div class="ad-label">��Ч����</div>
-                        <div class="ad-content">AI����ҵ����ӻ����ſ���������ģ�黯���ḻ���ܵ�Ԫ��������֧��</div>
+                        <div class="ad-label">高效开发</div>
+                        <div class="ad-content">AI推理业务可视化编排开发，功能模块化，功能单元丰富，多语言支持</div>
                     </div>
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-reliability.png')"></div>
-                        <div class="ad-label">�����ܣ��߿ɿ�</div>
-                        <div class="ad-content">Pipeline�������У����ݼ������ܵ��ȣ���Դ�������Ⱦ�ϸ����ҵ�����и���Ч</div>
+                        <div class="ad-label">高性能</div>
+                        <div class="ad-content">Pipeline并发运行，数据计算智能调度，资源管理调度精细化，业务运行更高效</div>
                     </div>
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-same.png')"></div>
-                        <div class="ad-label">������Ӳ������</div>
-                        <div class="ad-content">���칹Ӳ��������ϵͳ��������ܣ���Դ���ø���ݸ�Ч</div>
+                        <div class="ad-label">屏蔽软硬件差异</div>
+                        <div class="ad-content">跨异构硬件、操作系统、推理框架，资源利用更便捷高效</div>
                     </div>
                 </div>
                 <div class="advantage-content-line">
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-all.png')"></div>
-                        <div class="ad-label">ȫ��������</div>
-                        <div class="ad-content">֧����Ƶ���������ı���NLP������AIӦ�ÿ���</div>
+                        <div class="ad-label">全场景开发</div>
+                        <div class="ad-content">支持视频、语音、文本、NLP场景的AI应用开发</div>
                     </div>
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-merge.png')"></div>
-                        <div class="ad-label">���ڼ���</div>
-                        <div class="ad-content">��ݼ������Ϲ��ܵ�Ԫ�˱��������޷콻��</div>
+                        <div class="ad-label">易于集成</div>
+                        <div class="ad-content">便捷集成云上功能单元，端边云数据无缝交换</div>
                     </div>
                     <div class="advantage-content-item">
                         <div class="ad-icon" style="background-image: url('./img/ad-maintain.png')"></div>
-                        <div class="ad-label">����ά��</div>
-                        <div class="ad-content">״̬���ӻ���Ӧ�ã����ܵ�Ԫ����ʵʱ���</div>
+                        <div class="ad-label">易于维护</div>
+                        <div class="ad-content">状态可视化，应用，功能单元性能实时监控</div>
                     </div>
                 </div>
             </div>
-
             <div id="forWho" class="content-gap width-rate for-who">
-                <div class="content-item-title">���ö���</div>
+                <div class="content-item-title">适用对象</div>
                 <div class="for-who-content">
                     <div class="obj-half" style="padding-right: 20px">
                         <div class="obj-item" style="background-image: url('./img/for-ai.png')"></div>
                         <div class="obj-item">
-                            <div class="obj-item-title">AIӦ�ÿ�����</div>
-                            <div class="obj-item-content">AIӦ�ÿ��������ģ��ѵ��������ModelBox�淶������AIӦ�ã����ɿ��ٲ����ڶˡ��ߡ��ƣ������ٶԽ�ҵ��ϵͳ��ʵ����ء�</div>
+                            <div class="obj-item-title">AI应用开发者</div>
+                            <div class="obj-item-content">AI应用开发者完成模型训练后，适用ModelBox规范开发成AI应用，即可快速部署在端、边、云，并快速对接业务系统与实现落地。</div>
                         </div>
                     </div>
                     <div class="obj-half" style="padding-left: 20px">
                         <div class="obj-item" style="background-image: url('./img/for-plateform.png')"></div>
                         <div class="obj-item">
-                            <div class="obj-item-title">ƽ̨���ɿ�����</div>
-                            <div class="obj-item-content">ƽ̨���ɿ�����ͨ���Ѿ�ӵ���Լ���ƽ̨����ƽ̨�м���ModelBox��ܣ��ɸ��öԽ�AIӦ�ã��Ӷ���ƽ̨�û��ṩһ�����߾�������AIƽ̨��ҵ��ϵͳ��</div>
+                            <div class="obj-item-title">平台集成开发者</div>
+                            <div class="obj-item-content">平台集成开发者通常已经拥有自己的平台，在平台中集成ModelBox框架，可更好对接AI应用，从而向平台用户提供一个更具竞争力的AI平台或业务系统。</div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div id="devSample" class="conten-gap dev-sample">
-                <div class="width-rate content-item-title">����ʾ��</div>
+                <div class="width-rate content-item-title">开发示例</div>
                 <div class="dev-sample-content width-rate">
                     <div class="dev-content-line">
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample1.gif')"></div>
-                            <div class="dev-item-title">����ؼ�����</div>
+                            <div class="dev-item-title">人体关键点检测</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample2.gif')"></div>
-                            <div class="dev-item-title">������ͼ�����ƶ���</div>
+                            <div class="dev-item-title">背景抠图</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample3.gif')"></div>
-                            <div class="dev-item-title">���ּ��</div>
+                            <div class="dev-item-title">口罩检测</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample4.gif')"></div>
-                            <div class="dev-item-title">�������Լ��</div>
+                            <div class="dev-item-title">人脸属性检测</div>
                         </div>
                     </div>
                     <div class="dev-content-line">
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample5.gif')"></div>
-                            <div class="dev-item-title">��ȫñ���</div>
+                            <div class="dev-item-title">安全帽检测</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample6.gif')"></div>
-                            <div class="dev-item-title">�����ؼ���</div>
+                            <div class="dev-item-title">人脸关键点</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample7.gif')"></div>
-                            <div class="dev-item-title">���˼��</div>
+                            <div class="dev-item-title">行人检测</div>
                         </div>
                         <div class="dev-content-item">
                             <div class="dev-item-icon" style="background-image: url('./img/sample8.gif')"></div>
-                            <div class="dev-item-title">���Ի���</div>
+                            <div class="dev-item-title">异性换脸</div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="content-gap vedio-tutorial" id="vedioTutorial">
-                <div class="width-rate content-item-title">��ѧ��Ƶ</div>
+                <div class="width-rate content-item-title">教学视频</div>
                 <div class="width-rate vedio-content">
                     <div class="vedio-item" style="padding-right: 20px">
                         <video class="vedio-icon" src="./media/vedio1.mp4" controls="controls"></video>
-                        <div class="vedio-title">��ModleBox�Ͽ���Ӧ��</div>
+                        <div class="vedio-title">在ModleBox上开发应用</div>
                     </div>
                     <div class="vedio-item" style="padding-left: 20px">
                         <video class="vedio-icon" src="./media/vedio2.mp4" controls="controls"></video>
-                        <div class="vedio-title">��ModleBox�Ͽ���Ӧ��</div>
+                        <div class="vedio-title">在ModleBox上开发应用</div>
                     </div>
                 </div>
             </div>
-
             <div id="funList" class="content-gap function-list">
-                <div class="width-rate content-item-title">�����б�</div>
+                <div class="width-rate content-item-title">功能列表</div>
                 <div class="function-list-content">
                     <div class="function-list-left"></div>
                     <div class="function-list-right">
                         <div class="fun-function">
-                            <div class="fun-item-title">����</div>
+                            <div class="fun-item-title">功能</div>
                             <div class="fun-item-content">
-                                <div class="fun-item">��Ҫҵ�񳡾�</div>
-                                <div class="fun-item">֧����������</div>
-                                <div class="fun-item">�û�Ⱥ</div>
-                                <div class="fun-item">��ƽ̨</div>
-                                <div class="fun-item">ͼ�λ�����</div>
-                                <div class="fun-item">API�б�</div>
-                                <div class="fun-item">֧��OS</div>
-                                <div class="fun-item">֧��Ӳ��</div>
-                                <div class="fun-item">ͼ���ӻ�</div>
-                                <div class="fun-item">���ܵ���</div>
-                                <div class="fun-item">ͼ����</div>
-                                <div class="fun-item">�ֲ�ʽ</div>
-                                <div class="fun-item">һ�ο������������</div>
-                                <div class="fun-item">���Ƶ�����Ԫ</div>
+                                <div class="fun-item">主要业务场景</div>
+                                <div class="fun-item">支持数据类型</div>
+                                <div class="fun-item">用户群</div>
+                                <div class="fun-item">跨平台</div>
+                                <div class="fun-item">图形化编排</div>
+                                <div class="fun-item">API列表</div>
+                                <div class="fun-item">支持OS</div>
+                                <div class="fun-item">支持硬件</div>
+                                <div class="fun-item">图可视化</div>
+                                <div class="fun-item">性能调测</div>
+                                <div class="fun-item">图能力</div>
+                                <div class="fun-item">分布式</div>
+                                <div class="fun-item">一次开发，多出运行</div>
+                                <div class="fun-item">完善的流单元</div>
                             </div>
                         </div>
                         <div class="fun-detail">
-                            <div class="fun-item-title">˵��</div>
+                            <div class="fun-item-title">说明</div>
                             <div class="fun-item-content">
-                                <div class="fun-item">�������AI����ҵ��Ŀ�������</div>
-                                <div class="fun-item">��Ƶ����Ƶ��ͼƬ��ͨ�����ݣ�����</div>
-                                <div class="fun-item">���������ߣ��о���Ա��ѧ��</div>
-                                <div class="fun-item">���������߲��豸��Ƕ��ʽ�豸</div>
-                                <div class="fun-item">֧��ģ�͵Ĵ�����֧����Ƶ������Ƶ����ͼƬ������</div>
+                                <div class="fun-item">快速完成AI推理业务的开发工作</div>
+                                <div class="fun-item">视频，音频，图片，通用数据，其他</div>
+                                <div class="fun-item">软件开发者，研究人员，学生</div>
+                                <div class="fun-item">服务器，边侧设备，嵌入式设备</div>
+                                <div class="fun-item">支持模型的串联，支持视频流，音频流，图片等推理</div>
                                 <div class="fun-item">C++SDK, PYTHON SDK, JAVA SDK</div>
                                 <div class="fun-item">Linux, andriod, iOS</div>
-                                <div class="fun-item">X86, ARM, GPU, NPU, ��</div>
-                                <div class="fun-item">���ſ������ӻ�ͼ����ͼ</div>
-                                <div class="fun-item">���ܸ���</div>
-                                <div class="fun-item">֧��������֧��ѭ����֧��splice, reduce��ͼ����</div>
-                                <div class="fun-item">֧�ֲַ�ʽͼ�������ֲ�ʽ��̬����ҵ��ִ��</div>
-                                <div class="fun-item">PYTHON����Ԫ��C++����Ԫ��java����Ԫ</div>
-                                <div class="fun-item">�����˴󲿷ָ����ܵĻ�������Ԫ������http����Ƶ����Ƶ��ͼ������ص�����Ԫ</div>
+                                <div class="fun-item">X86, ARM, GPU, NPU, …</div>
+                                <div class="fun-item">编排开发可视化图，子图</div>
+                                <div class="fun-item">性能跟踪</div>
+                                <div class="fun-item">支持条件分支，循环分支，splice, reduce等图能力</div>
+                                <div class="fun-item">支持分布式图处理，分布式动态调整业务执行</div>
+                                <div class="fun-item">PYTHON流单元，C++流单元，java流单元</div>
+                                <div class="fun-item">包含了大部分高性能的基础流单元，包括http，视频，音频，图像，云相关的流单元</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="content-gap dev-course" id="devCourse">
-                <div class="width-rate content-item-title">�����̳�</div>
+                <div class="width-rate content-item-title">开发教程</div>
                 <div class="course-content">
                     <div class="course-item">
                         <div class="course-icon" style="background-image: url('./img/course1.png')"></div>
-                        <div class="course-title">��������</div>
+                        <div class="course-title">上手指南</div>
                     </div>
                     <div class="course-item" style="padding: 0 10px 0 20px;">
                         <div class="course-icon" style="background-image: url('./img/course2.png')"></div>
-                        <div class="course-title">������⿪������</div>
+                        <div class="course-title">车辆检测开发案例</div>
                     </div>
                     <div class="course-item" style="padding: 0 20px 0 10px;">
                         <div class="course-icon" style="background-image: url('./img/course3.png')"></div>
-                        <div class="course-title">��д����ʶ����</div>
+                        <div class="course-title">手写数字识别案例</div>
                     </div>
                     <div class="course-item">
                         <div class="course-icon" style="background-image: url('./img/course4.png')"></div>
-                        <div class="course-title">����ؼ����⿪������</div>
+                        <div class="course-title">人体关键点检测开发案例</div>
                     </div>
                 </div>
             </div>
-
         </div>
     </body>
-
     <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/modelbox.js"></script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
