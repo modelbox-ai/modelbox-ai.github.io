@@ -80,7 +80,10 @@ $('.test');
 			if(objId) {
 				navigationSelected.initIndex(objId, item);
 				$(item).unbind('click').bind('click', e => {
-					const id = $(e.target).attr('obj-id');
+					let id = $(e.target).attr('obj-id');
+					if(!id) {
+						id = $(e.target.parentNode.parentNode).attr('obj-id');
+					}
 					const offsetTop = $("#" + id)[0].offsetTop - 50;    //50是导航的宽度
 					$('html,body').animate({scrollTop: offsetTop}, 300);
 				});	
