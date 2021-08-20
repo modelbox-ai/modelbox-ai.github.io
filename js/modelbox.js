@@ -97,7 +97,7 @@ $('.test');
 	$('#gotoGithub').unbind('click').bind('click', e => {
 		const newTab = window.open();
 		newTab.opener = null;
-		newTab.location = 'https://github.com/';
+		newTab.location = 'https://github.com/modelbox-ai/modelbox-ai.github.io';
 	});
 	
 	$('#gettingStart').unbind('click').bind('click', e => {
