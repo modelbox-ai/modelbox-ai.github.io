@@ -1,4 +1,5 @@
-(() => {
+$('.test');
+(() => {	
     const adjustScale = () => {
         const scaleRate = {
             'banner': 450 / 1920,
@@ -35,11 +36,14 @@
         };
 
         const initIndex = (id, dom) => {
-            const value = $("#" + id)[0].offsetTop - 50
-            indexScroll[id] = {
-                dom,
-                offset: value
-            };
+			const dom1 = $("#" + id)[0];
+			if(dom1) {
+				const value = dom1.offsetTop - 50
+				indexScroll[id] = {
+					dom,
+					offset: value
+				};
+			}
         };
 
         const scrolling = offsetTop => {
@@ -72,12 +76,15 @@
 
     const bindNavigateClick = () => {
         [...$('.navigation').children('div')].forEach(item => {
-            navigationSelected.initIndex($(item).attr('obj-id'), item);
-            $(item).unbind('click').bind('click', e => {
-                const id = $(e.target).attr('obj-id');
-                const offsetTop = $("#" + id)[0].offsetTop - 50;    //50是导航的宽度
-                $('html,body').animate({scrollTop: offsetTop}, 300);
-            });
+			const objId = $(item).attr('obj-id');
+			if(objId) {
+				navigationSelected.initIndex(objId, item);
+				$(item).unbind('click').bind('click', e => {
+					const id = $(e.target).attr('obj-id');
+					const offsetTop = $("#" + id)[0].offsetTop - 50;    //50是导航的宽度
+					$('html,body').animate({scrollTop: offsetTop}, 300);
+				});	
+			}
         });
     };
     bindNavigateClick();
@@ -86,5 +93,17 @@
         const offsetTop = $(document).scrollTop();  //滚动高度
         navigationSelected.scrolling(offsetTop);
     });
+	
+	$('#gotoGithub').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = 'https://github.com/';
+	});
+	
+	$('#gettingStart').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/index.html';
+	});
 
 })()
