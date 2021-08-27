@@ -1,0 +1,1279 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.2 第三方平台对接样例 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="运维与监控.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1 总体概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="背景.html">
+            
+                <a href="背景.html">
+            
+                    
+                    1.1 背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="术语定义.html">
+            
+                <a href="术语定义.html">
+            
+                    
+                    1.2 术语定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="典型场景中AI落地挑战.html">
+            
+                <a href="典型场景中AI落地挑战.html">
+            
+                    
+                    1.3 典型场景中AI落地挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="ModelBox定义和价值.html">
+            
+                <a href="ModelBox定义和价值.html">
+            
+                    
+                    1.4 ModelBox定义和价值
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="ModelBox定义.html">
+            
+                <a href="ModelBox定义.html">
+            
+                    
+                    1.4.1 ModelBox定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="ModelBox价值.html">
+            
+                <a href="ModelBox价值.html">
+            
+                    
+                    1.4.2 ModelBox价值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="用户介绍.html">
+            
+                <a href="用户介绍.html">
+            
+                    
+                    1.5 用户介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="总体架构.html">
+            
+                <a href="总体架构.html">
+            
+                    
+                    2 总体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="在系统中的位置.html">
+            
+                <a href="在系统中的位置.html">
+            
+                    
+                    2.1 在系统中的位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="运行框架架构.html">
+            
+                <a href="运行框架架构.html">
+            
+                    
+                    2.2 运行框架架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ModelBox框架能力及规范.html">
+            
+                <a href="ModelBox框架能力及规范.html">
+            
+                    
+                    3 ModelBox框架能力及规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="开发与调试能力.html">
+            
+                <a href="开发与调试能力.html">
+            
+                    
+                    3.1 开发与调试能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="API开发模式.html">
+            
+                <a href="API开发模式.html">
+            
+                    
+                    3.1.1 API开发模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="图编排开发模式.html">
+            
+                <a href="图编排开发模式.html">
+            
+                    
+                    3.1.2 图编排开发模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="图编排概念.html">
+            
+                <a href="图编排概念.html">
+            
+                    
+                    3.1.2.1 图编排概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="图编排引擎.html">
+            
+                <a href="图编排引擎.html">
+            
+                    
+                    3.1.2.2 图编排引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="图编排开发与调试.html">
+            
+                <a href="图编排开发与调试.html">
+            
+                    
+                    3.1.2.3 图编排开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="图编排开发规范.html">
+            
+                <a href="图编排开发规范.html">
+            
+                    
+                    3.1.2.4 图编排开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.4.1" data-path="图的编排规范.html">
+            
+                <a href="图的编排规范.html">
+            
+                    
+                    3.1.2.4.1 图的编排规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4.2" data-path="图的运行规范.html">
+            
+                <a href="图的运行规范.html">
+            
+                    
+                    3.1.2.4.2 图的运行规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="功能单元开发.html">
+            
+                <a href="功能单元开发.html">
+            
+                    
+                    3.1.3 功能单元开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="功能单元概念.html">
+            
+                <a href="功能单元概念.html">
+            
+                    
+                    3.1.3.1 功能单元概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="基础功能单元库.html">
+            
+                <a href="基础功能单元库.html">
+            
+                    
+                    3.1.3.2 基础功能单元库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="功能单元开发与调试.html">
+            
+                <a href="功能单元开发与调试.html">
+            
+                    
+                    3.1.3.3 功能单元开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="功能单元开发规范.html">
+            
+                <a href="功能单元开发规范.html">
+            
+                    
+                    3.1.3.4 功能单元开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.4.1" data-path="自定义功能单元开发规范.html">
+            
+                <a href="自定义功能单元开发规范.html">
+            
+                    
+                    3.1.3.4.1 自定义功能单元开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4.2" data-path="推理功能单元开发规范.html">
+            
+                <a href="推理功能单元开发规范.html">
+            
+                    
+                    3.1.3.4.2 推理功能单元开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="服务插件开发.html">
+            
+                <a href="服务插件开发.html">
+            
+                    
+                    3.1.4 服务插件开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="服务插件开发能力.html">
+            
+                <a href="服务插件开发能力.html">
+            
+                    
+                    3.1.4.1 服务插件开发能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="服务插件开发规范.html">
+            
+                <a href="服务插件开发规范.html">
+            
+                    
+                    3.1.4.2 服务插件开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="性能分析.html">
+            
+                <a href="性能分析.html">
+            
+                    
+                    3.1.5 性能分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="部署与推理能力.html">
+            
+                <a href="部署与推理能力.html">
+            
+                    
+                    3.2 部署与推理能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="AI应用打包.html">
+            
+                <a href="AI应用打包.html">
+            
+                    
+                    3.2.1 AI应用打包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="软件包格式.html">
+            
+                <a href="软件包格式.html">
+            
+                    
+                    3.2.1.1 软件包格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="容器镜像格式.html">
+            
+                <a href="容器镜像格式.html">
+            
+                    
+                    3.2.1.2 容器镜像格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="任务配置管理.html">
+            
+                <a href="任务配置管理.html">
+            
+                    
+                    3.2.2 任务配置管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="任务配置管理能力.html">
+            
+                <a href="任务配置管理能力.html">
+            
+                    
+                    3.2.2.1 任务配置管理能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="任务配置管理规范.html">
+            
+                <a href="任务配置管理规范.html">
+            
+                    
+                    3.2.2.2 任务配置管理规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="资源管理.html">
+            
+                <a href="资源管理.html">
+            
+                    
+                    3.2.3 资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="样本数据采集.html">
+            
+                <a href="样本数据采集.html">
+            
+                    
+                    3.2.4 样本数据采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.4.1" data-path="样本数据采集能力.html">
+            
+                <a href="样本数据采集能力.html">
+            
+                    
+                    3.2.4.1 样本数据采集能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.2" data-path="样本数据采集规范.html">
+            
+                <a href="样本数据采集规范.html">
+            
+                    
+                    3.2.4.2 样本数据采集规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="协同推理.html">
+            
+                <a href="协同推理.html">
+            
+                    
+                    3.2.5 协同推理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.5.1" data-path="协同推理能力.html">
+            
+                <a href="协同推理能力.html">
+            
+                    
+                    3.2.5.1 协同推理能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5.2" data-path="协同推理规范.html">
+            
+                <a href="协同推理规范.html">
+            
+                    
+                    3.2.5.2 协同推理规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="运维与监控能力.html">
+            
+                <a href="运维与监控能力.html">
+            
+                    
+                    3.3 运维与监控能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="日志.html">
+            
+                <a href="日志.html">
+            
+                    
+                    3.3.1 日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="日志收集能力.html">
+            
+                <a href="日志收集能力.html">
+            
+                    
+                    3.3.1.1 日志收集能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2" data-path="日志收集规范.html">
+            
+                <a href="日志收集规范.html">
+            
+                    
+                    3.3.1.2 日志收集规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="监控与统计.html">
+            
+                <a href="监控与统计.html">
+            
+                    
+                    3.3.2 监控与统计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="系统监控与计量.html">
+            
+                <a href="系统监控与计量.html">
+            
+                    
+                    3.3.2.1 系统监控与计量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.2" data-path="业务监控.html">
+            
+                <a href="业务监控.html">
+            
+                    
+                    3.3.2.2 业务监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.3" data-path="监控与统计规范.html">
+            
+                <a href="监控与统计规范.html">
+            
+                    
+                    3.3.2.3 监控与统计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="多设备类型适配能力.html">
+            
+                <a href="多设备类型适配能力.html">
+            
+                    
+                    3.4 多设备类型适配能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="推理框架适配.html">
+            
+                <a href="推理框架适配.html">
+            
+                    
+                    3.4.1 推理框架适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="系统适配.html">
+            
+                <a href="系统适配.html">
+            
+                    
+                    3.4.2 系统适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="硬件适配.html">
+            
+                <a href="硬件适配.html">
+            
+                    
+                    3.4.3 硬件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="安全能力.html">
+            
+                <a href="安全能力.html">
+            
+                    
+                    3.5 安全能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="模型加解密.html">
+            
+                <a href="模型加解密.html">
+            
+                    
+                    3.5.1 模型加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="数据安全.html">
+            
+                <a href="数据安全.html">
+            
+                    
+                    3.5.2 数据安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="License.html">
+            
+                <a href="License.html">
+            
+                    
+                    3.5.3 License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="场景例子.html">
+            
+                <a href="场景例子.html">
+            
+                    
+                    4 场景例子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="AI应用开发者样例.html">
+            
+                <a href="AI应用开发者样例.html">
+            
+                    
+                    4.1 AI应用开发者样例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="车牌检测业务介绍.html">
+            
+                <a href="车牌检测业务介绍.html">
+            
+                    
+                    4.1.1 车牌检测业务介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="开发与调试.html">
+            
+                <a href="开发与调试.html">
+            
+                    
+                    4.1.2 开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="部署与推理.html">
+            
+                <a href="部署与推理.html">
+            
+                    
+                    4.1.3 部署与推理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="运维与监控.html">
+            
+                <a href="运维与监控.html">
+            
+                    
+                    4.1.4 运维与监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="第三方平台对接样例.html">
+            
+                <a href="第三方平台对接样例.html">
+            
+                    
+                    4.2 第三方平台对接样例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >4.2 第三方平台对接样例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x5BF9;&#x63A5;&#x6837;&#x4F8B;">&#x7B2C;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x5BF9;&#x63A5;&#x6837;&#x4F8B;<a name="ZH-CN_TOPIC_0000001092845286"></a></h1>
+<p>&#x8FD9;&#x91CC;&#x4EE5;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x96C6;&#x6210;ModelBox&#x6846;&#x67B6;&#x4E3A;&#x4F8B;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;ModelBox&#x6846;&#x67B6;&#x88AB;&#x96C6;&#x6210;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#x4E3B;&#x8981;&#x5E94;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x5E73;&#x53F0;&#x96C6;&#x6210;ModelBox&#x6846;&#x67B6;&#x540E;&#x5982;&#x4F55;&#x4E0E;ModelBox&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x7531;&#x4E8E;ModelBox&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x5747;&#x63D0;&#x4F9B;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x53CA;&#x89C4;&#x8303;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x5E73;&#x53F0;&#x6240;&#x9700;&#x7684;&#x529F;&#x80FD;&#x4E0E;ModelBox&#x6846;&#x67B6;&#x7684;&#x5404;&#x4E2A;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x5BF9;&#x63A5;&#x4EA4;&#x4E92;&#x3002;</p>
+<p>&#x4EE5;&#x67D0;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x4E3A;&#x4F8B;&#xFF0C;&#x5047;&#x8BBE;&#x8BE5;&#x5E73;&#x53F0;&#x9700;&#x8981;&#x5B8C;&#x6210;&#x5982;&#x4E0B;&#x65B9;&#x9762;&#x4E0E;ModelBox&#x7684;&#x5BF9;&#x63A5;&#xFF1A;</p>
+<ol>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x548C;AI&#x5E94;&#x7528;&#x95F4;&#x7684;&#x901A;&#x9053;&#x5EFA;&#x7ACB;&#x548C;&#x534F;&#x5546;&#xFF0C;&#x4FDD;&#x8BC1;AI&#x5E94;&#x7528;&#x7684;&#x5B89;&#x5168;&#xFF0C;&#x5305;&#x542B;&#x63E1;&#x624B;&#x3001;&#x5FC3;&#x8DF3;&#x3001;&#x8BC1;&#x4E66;&#x52A0;&#x89E3;&#x5BC6;&#x7B49;&#xFF1B;</li>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x4EFB;&#x52A1;&#x7ED3;&#x6784;&#x548C;ModelBox&#x4EFB;&#x52A1;&#x7ED3;&#x6784;&#x95F4;&#x7684;&#x9002;&#x914D;&#xFF1B;</li>
+<li>&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x4EFB;&#x52A1;&#x548C;ModelBox&#x95F4;&#x8FD0;&#x7EF4;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x5BF9;&#x63A5;&#x3002;</li>
+</ol>
+<p><strong>&#x56FE; 1</strong>  ModelBox&#x5BF9;&#x63A5;<a name="fig18521137192313"></a><br><img src="figures/ModelBox&#x5BF9;&#x63A5;.png" alt="" title="ModelBox&#x5BF9;&#x63A5;"></p>
+<p>&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;ModelBox&#x8FDB;&#x884C;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#xFF0C;&#x6EE1;&#x8DB3;&#x4E0A;&#x8FF0;&#x7B2C;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x548C;ModelBox&#x6846;&#x67B6;&#x7684;&#x5BF9;&#x63A5;&#x8BC9;&#x6C42;&#xFF0C;&#x5E76;&#x5C06;&#x63D2;&#x4EF6;&#x63D0;&#x4F9B;&#x7ED9;AI&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x96C6;&#x6210;&#x540E;&#x7684;AI&#x5E94;&#x7528;&#x5373;&#x53EF;&#x5BF9;&#x63A5;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x3002;&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x9700;&#x8981;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x5B9E;&#x73B0;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x591A;&#x4E2A;&#x63D2;&#x4EF6;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;&#x91C7;&#x7528;&#x4E24;&#x4E2A;&#x63D2;&#x4EF6;&#x8FDB;&#x884C;&#x5BF9;&#x63A5;&#x3002;</p>
+<p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6B65;&#x9AA4;&#x548C;&#x89C4;&#x8303;&#x53EF;&#x89C1;<a href="&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x89C4;&#x8303;.html">&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x89C4;&#x8303;</a>&#xFF0C;&#x9996;&#x5148;&#x590D;&#x5236;&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x6837;&#x4F8B;&#xFF0C;&#x518D;&#x5B9E;&#x73B0;&#x63D2;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x4E0B;&#x9762;&#x4EE5;&#x201C;&#x7528;&#x6237;&#x4EFB;&#x52A1;&#x5BF9;&#x63A5;&#x63D2;&#x4EF6;&#x201D;&#x4E3A;&#x4F8B;&#xFF0C;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// &#x63D2;&#x4EF6;&#x521B;&#x5EFA;&#x63A5;&#x53E3;
+std::shared_ptr&lt;Plugin&gt; CreatePlugin() {
+&#x63D2;&#x4EF6;&#x5BF9;&#x8C61;&#x521B;&#x5EFA;
+&#x2026;
+}
+
+// &#x63D2;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x63A5;&#x53E3;
+bool MyPlugin::Init(std::shared_ptr&lt;modelbox::Configuration&gt; config) {
+
+&#x8D44;&#x6E90;&#x51C6;&#x5907;
+&#x2026;
+}
+
+// &#x63D2;&#x4EF6;&#x542F;&#x52A8;&#x63A5;&#x53E3;
+bool MyPlugin::Start() {
+&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x901A;&#x9053;&#x5EFA;&#x7ACB;
+&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x534F;&#x5546;&#x63E1;&#x624B;
+&#x542F;&#x52A8;&#x4E0E;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x5FC3;&#x8DF3;&#x7EBF;&#x7A0B;
+&#x542F;&#x52A8;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x7EBF;&#x7A0B;&#xFF0C;&#x63A5;&#x53D7;&#x7B2C;&#x4E09;&#x65B9;&#x8F6F;&#x4EF6;&#x5E73;&#x53F0;&#x4EFB;&#x52A1;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x6210;ModelBox&#x89C4;&#x8303;&#x683C;&#x5F0F;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x4EFB;&#x52A1;&#x914D;&#x7F6E;&#x7BA1;&#x7406;&#x89C4;&#x8303;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x589E;&#x5220;&#x6539;&#x67E5;
+&#x2026;
+}
+
+// &#x63D2;&#x4EF6;&#x505C;&#x6B62;&#x63A5;&#x53E3;
+bool MyPlugin::Stop() {
+&#x8D44;&#x6E90;&#x91CA;&#x653E;
+...
+}
+</code></pre><p>&#x670D;&#x52A1;&#x63D2;&#x4EF6;&#x63A5;&#x53E3;&#x5F00;&#x53D1;&#x5B8C;&#x6BD5;&#x540E;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x7F16;&#x8BD1;&#x6210;&#x5E93;&#xFF0C;&#x6DFB;&#x52A0;&#x5230;&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x7ED9;AI&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x8005;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="运维与监控.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4.1.4 运维与监控">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.2 第三方平台对接样例","level":"1.4.2","depth":2,"previous":{"title":"4.1.4 运维与监控","level":"1.4.1.4","depth":3,"path":"运维与监控.md","ref":"运维与监控.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三方平台对接样例.md","mtime":"2021-08-23T03:15:44.751Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-27T07:42:17.750Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -16,7 +16,7 @@ div {
     background: #fff;
     top: 0;
     padding-left: 15%;
-    width: 100% !important;
+    width: 85% !important;
 }
 .navigation-selected {
     font-family: PingFangSC-Medium !important;
@@ -36,6 +36,34 @@ div {
     font-family: PingFangSC-Regular;
     cursor: pointer;
 }
+
+.goto-github {
+	color: #39f;
+    cursor: pointer;
+    position: fixed;
+    font-size: 13px;
+    top: 20px;
+    right: 160px;
+}
+
+.goto-gitee {
+	color: #39f;
+    cursor: pointer;
+    position: fixed;
+    font-size: 13px;
+    top: 20px;
+    right: 110px;
+}
+
+.goto-specification {
+	color: #39f;
+    cursor: pointer;
+    position: fixed;
+    font-size: 13px;
+    top: 20px;
+    right: 15px;
+}
+
 .banner {
     margin-top: 50px;
     width: 100%;
@@ -107,6 +135,7 @@ div {
 .advantage {
     background-color: #FAFAFA;
     height: 632px;
+	min-height: 500px;
 }
 .advantage-content-line {
     height: 36.39%;
@@ -144,6 +173,7 @@ div {
 .for-who {
     background-color: #FAFAFA;
     height: 472px;
+	min-height: 400px;
 }
 .for-who-content {
     width: 100%;
@@ -313,6 +343,7 @@ div {
     height: 100%;
     width: calc(25% - 15px);
     float: left;
+	cursor: pointer;
 }
 .course-icon {
     height: 80%;
@@ -328,4 +359,7 @@ div {
     height: 15%;
     padding-top: 10px;
     text-align: center;
+}
+.dev-course {
+	min-height: 300px;
 }

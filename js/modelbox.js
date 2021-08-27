@@ -1,4 +1,5 @@
-(() => {
+$('.test');
+(() => {	
     const adjustScale = () => {
         const scaleRate = {
             'banner': 450 / 1920,
@@ -35,19 +36,22 @@
         };
 
         const initIndex = (id, dom) => {
-            const value = $("#" + id)[0].offsetTop - 50
-            indexScroll[id] = {
-                dom,
-                offset: value
-            };
+			const dom1 = $("#" + id)[0];
+			if(dom1) {
+				const value = dom1.offsetTop - 50
+				indexScroll[id] = {
+					dom,
+					offset: value
+				};
+			}
         };
 
         const scrolling = offsetTop => {
             const scrollHeight = $(document).height();
             const windowHeight = window.innerHeight;
             if(scrollHeight - offsetTop - windowHeight < 50){
-                // 到底部导航显示到【开发教程】
-                changeSelected('devCourse');
+                // 到底部导航显示到【功能列表】
+                changeSelected('funList');
                 return;
             }
 
@@ -72,12 +76,18 @@
 
     const bindNavigateClick = () => {
         [...$('.navigation').children('div')].forEach(item => {
-            navigationSelected.initIndex($(item).attr('obj-id'), item);
-            $(item).unbind('click').bind('click', e => {
-                const id = $(e.target).attr('obj-id');
-                const offsetTop = $("#" + id)[0].offsetTop - 50;    //50是导航的宽度
-                $('html,body').animate({scrollTop: offsetTop}, 300);
-            });
+			const objId = $(item).attr('obj-id');
+			if(objId) {
+				navigationSelected.initIndex(objId, item);
+				$(item).unbind('click').bind('click', e => {
+					let id = $(e.target).attr('obj-id');
+					if(!id) {
+						id = $(e.target.parentNode.parentNode).attr('obj-id');
+					}
+					const offsetTop = $("#" + id)[0].offsetTop - 50;    //50是导航的宽度
+					$('html,body').animate({scrollTop: offsetTop}, 300);
+				});	
+			}
         });
     };
     bindNavigateClick();
@@ -86,5 +96,42 @@
         const offsetTop = $(document).scrollTop();  //滚动高度
         navigationSelected.scrolling(offsetTop);
     });
-
+	
+	$('#gotoGithub').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = 'https://www.github.com/modelbox-ai/modelbox.git';
+	});
+	
+	$('#gotoGitee').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = 'https://www.gitee.com/modelbox/modelbox.git';
+	});
+	
+	$('#gotoSpecification').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/standard-book/index.html';
+	});
+	
+	$('#try').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/try-now/index.html';
+	});
+	
+	$('#instruction').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/index.html';
+	});
+	
+	/*
+	$('#gettingStart').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/index.html';
+	});
+*/
 })()
