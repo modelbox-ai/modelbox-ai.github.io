@@ -50,8 +50,8 @@ $('.test');
             const scrollHeight = $(document).height();
             const windowHeight = window.innerHeight;
             if(scrollHeight - offsetTop - windowHeight < 50){
-                // 到底部导航显示到【开发教程】
-                changeSelected('devCourse');
+                // 到底部导航显示到【功能列表】
+                changeSelected('funList');
                 return;
             }
 
@@ -100,13 +100,38 @@ $('.test');
 	$('#gotoGithub').unbind('click').bind('click', e => {
 		const newTab = window.open();
 		newTab.opener = null;
-		newTab.location = 'https://github.com/modelbox-ai/modelbox-ai.github.io';
+		newTab.location = 'https://www.github.com/modelbox-ai/modelbox.git';
 	});
 	
+	$('#gotoGitee').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = 'https://www.gitee.com/modelbox/modelbox.git';
+	});
+	
+	$('#gotoSpecification').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/standard-book/index.html';
+	});
+	
+	$('#try').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/try-now/index.html';
+	});
+	
+	$('#instruction').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/index.html';
+	});
+	
+	/*
 	$('#gettingStart').unbind('click').bind('click', e => {
 		const newTab = window.open();
 		newTab.opener = null;
 		newTab.location = './pages/getting-start/index.html';
 	});
-
+*/
 })()

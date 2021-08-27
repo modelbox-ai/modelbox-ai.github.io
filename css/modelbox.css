@@ -43,6 +43,24 @@ div {
     position: fixed;
     font-size: 13px;
     top: 20px;
+    right: 160px;
+}
+
+.goto-gitee {
+	color: #39f;
+    cursor: pointer;
+    position: fixed;
+    font-size: 13px;
+    top: 20px;
+    right: 110px;
+}
+
+.goto-specification {
+	color: #39f;
+    cursor: pointer;
+    position: fixed;
+    font-size: 13px;
+    top: 20px;
     right: 15px;
 }
 
@@ -117,6 +135,7 @@ div {
 .advantage {
     background-color: #FAFAFA;
     height: 632px;
+	min-height: 500px;
 }
 .advantage-content-line {
     height: 36.39%;
@@ -154,6 +173,7 @@ div {
 .for-who {
     background-color: #FAFAFA;
     height: 472px;
+	min-height: 400px;
 }
 .for-who-content {
     width: 100%;
@@ -339,4 +359,7 @@ div {
     height: 15%;
     padding-top: 10px;
     text-align: center;
+}
+.dev-course {
+	min-height: 300px;
 }

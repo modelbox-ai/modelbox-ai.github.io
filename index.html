@@ -6,21 +6,23 @@
             <div class="navigation width-rate">
                 <div class="navigation-item navigation-selected" obj-id="advantage" style="margin-left: 0">优势</div>
 				<div class="navigation-item" obj-id="forWho">适用对象</div>
-				<div class="navigation-item" obj-id="devSample">开发示例</div>
+				<div class="navigation-item" obj-id="devCourse">开发教程</div>
+				<div class="navigation-item" obj-id="devSample" style="display: none">开发示例</div>
 				<div class="navigation-item" obj-id="vedioTutorial" style="display: none">教学视频</div>
 				<div class="navigation-item" obj-id="funList">功能列表</div>
-				<div class="navigation-item" obj-id="devCourse">开发教程</div>
             </div>
 			
-			<div class="goto-github" id="gotoGithub">前往GitHub</div>
+			<div class="goto-github" id="gotoGithub" style="display: none">GitHub</div>
+			<div class="goto-gitee" id="gotoGitee">Gitee</div>
+			<div class="goto-specification" id="gotoSpecification">规范介绍</div>
 			
             <div class="banner">
                 <div class="banner-placeholder"></div>
                 <div class="padding-rate banner-title">ModelBox</div>
                 <div class="padding-rate banner-content">ModelBox是一套统一的端边云AI应用开发和运行框架的规范，以及在此规范上所实现的运行时框架。在此基础上，各参与方可贡献相关的代码、工具、平台、文档等相关内容。</div>
                 <div class="banner-button padding-rate width-rate">
-                    <button class="banner-button-use">立即使用</button>
-                    <button class="banner-button-details">使用介绍</button>
+                    <button class="banner-button-use" id="try">立即使用</button>
+                    <button class="banner-button-details" id="instruction">使用介绍</button>
                 </div>
             </div>
             <div class="content-gap width-rate advantage" id="advantage">
@@ -79,7 +81,28 @@
                     </div>
                 </div>
             </div>
-            <div id="devSample" class="conten-gap dev-sample">
+			<div class="content-gap dev-course" id="devCourse">
+                <div class="width-rate content-item-title">开发教程</div>
+                <div class="course-content">
+                    <div class="course-item">
+                        <div class="course-icon" style="background-image: url('./img/course1.png')"></div>
+                        <div class="course-title">上手指南</div>
+                    </div>
+                    <div class="course-item" style="padding: 0 10px 0 20px;">
+                        <div class="course-icon" style="background-image: url('./img/course2.png')"></div>
+                        <div class="course-title">车辆检测开发案例</div>
+                    </div>
+                    <div class="course-item" style="padding: 0 20px 0 10px;">
+                        <div class="course-icon" style="background-image: url('./img/course3.png')"></div>
+                        <div class="course-title">手写数字识别案例</div>
+                    </div>
+                    <div class="course-item">
+                        <div class="course-icon" style="background-image: url('./img/course4.png')"></div>
+                        <div class="course-title">人体关键点检测开发案例</div>
+                    </div>
+                </div>
+            </div>
+            <div id="devSample" class="conten-gap dev-sample" style="display: none">
                 <div class="width-rate content-item-title">开发示例</div>
                 <div class="dev-sample-content width-rate">
                     <div class="dev-content-line">
@@ -176,27 +199,6 @@
                                 <div class="fun-item">包含了大部分高性能的基础流单元，包括http，视频，音频，图像，云相关的流单元</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-gap dev-course" id="devCourse">
-                <div class="width-rate content-item-title">开发教程</div>
-                <div class="course-content">
-                    <div class="course-item" id="gettingStart">
-                        <div class="course-icon" style="background-image: url('./img/course1.png')"></div>
-                        <div class="course-title">上手指南</div>
-                    </div>
-                    <div class="course-item" style="padding: 0 10px 0 20px;">
-                        <div class="course-icon" style="background-image: url('./img/course2.png')"></div>
-                        <div class="course-title">车辆检测开发案例</div>
-                    </div>
-                    <div class="course-item" style="padding: 0 20px 0 10px;">
-                        <div class="course-icon" style="background-image: url('./img/course3.png')"></div>
-                        <div class="course-title">手写数字识别案例</div>
-                    </div>
-                    <div class="course-item">
-                        <div class="course-icon" style="background-image: url('./img/course4.png')"></div>
-                        <div class="course-title">人体关键点检测开发案例</div>
                     </div>
                 </div>
             </div>

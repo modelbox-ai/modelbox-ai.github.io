@@ -1,0 +1,1389 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.1.3.2 基础功能单元库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="功能单元开发与调试.html" />
+    
+    
+    <link rel="prev" href="功能单元概念.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1 总体概述
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="背景.html">
+            
+                <a href="背景.html">
+            
+                    
+                    1.1 背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="术语定义.html">
+            
+                <a href="术语定义.html">
+            
+                    
+                    1.2 术语定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="典型场景中AI落地挑战.html">
+            
+                <a href="典型场景中AI落地挑战.html">
+            
+                    
+                    1.3 典型场景中AI落地挑战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="ModelBox定义和价值.html">
+            
+                <a href="ModelBox定义和价值.html">
+            
+                    
+                    1.4 ModelBox定义和价值
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="ModelBox定义.html">
+            
+                <a href="ModelBox定义.html">
+            
+                    
+                    1.4.1 ModelBox定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.2" data-path="ModelBox价值.html">
+            
+                <a href="ModelBox价值.html">
+            
+                    
+                    1.4.2 ModelBox价值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="用户介绍.html">
+            
+                <a href="用户介绍.html">
+            
+                    
+                    1.5 用户介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="总体架构.html">
+            
+                <a href="总体架构.html">
+            
+                    
+                    2 总体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="在系统中的位置.html">
+            
+                <a href="在系统中的位置.html">
+            
+                    
+                    2.1 在系统中的位置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="运行框架架构.html">
+            
+                <a href="运行框架架构.html">
+            
+                    
+                    2.2 运行框架架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ModelBox框架能力及规范.html">
+            
+                <a href="ModelBox框架能力及规范.html">
+            
+                    
+                    3 ModelBox框架能力及规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="开发与调试能力.html">
+            
+                <a href="开发与调试能力.html">
+            
+                    
+                    3.1 开发与调试能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="API开发模式.html">
+            
+                <a href="API开发模式.html">
+            
+                    
+                    3.1.1 API开发模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="图编排开发模式.html">
+            
+                <a href="图编排开发模式.html">
+            
+                    
+                    3.1.2 图编排开发模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="图编排概念.html">
+            
+                <a href="图编排概念.html">
+            
+                    
+                    3.1.2.1 图编排概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="图编排引擎.html">
+            
+                <a href="图编排引擎.html">
+            
+                    
+                    3.1.2.2 图编排引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="图编排开发与调试.html">
+            
+                <a href="图编排开发与调试.html">
+            
+                    
+                    3.1.2.3 图编排开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="图编排开发规范.html">
+            
+                <a href="图编排开发规范.html">
+            
+                    
+                    3.1.2.4 图编排开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.4.1" data-path="图的编排规范.html">
+            
+                <a href="图的编排规范.html">
+            
+                    
+                    3.1.2.4.1 图的编排规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4.2" data-path="图的运行规范.html">
+            
+                <a href="图的运行规范.html">
+            
+                    
+                    3.1.2.4.2 图的运行规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="功能单元开发.html">
+            
+                <a href="功能单元开发.html">
+            
+                    
+                    3.1.3 功能单元开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="功能单元概念.html">
+            
+                <a href="功能单元概念.html">
+            
+                    
+                    3.1.3.1 功能单元概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.3.2" data-path="基础功能单元库.html">
+            
+                <a href="基础功能单元库.html">
+            
+                    
+                    3.1.3.2 基础功能单元库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="功能单元开发与调试.html">
+            
+                <a href="功能单元开发与调试.html">
+            
+                    
+                    3.1.3.3 功能单元开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="功能单元开发规范.html">
+            
+                <a href="功能单元开发规范.html">
+            
+                    
+                    3.1.3.4 功能单元开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.4.1" data-path="自定义功能单元开发规范.html">
+            
+                <a href="自定义功能单元开发规范.html">
+            
+                    
+                    3.1.3.4.1 自定义功能单元开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4.2" data-path="推理功能单元开发规范.html">
+            
+                <a href="推理功能单元开发规范.html">
+            
+                    
+                    3.1.3.4.2 推理功能单元开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="服务插件开发.html">
+            
+                <a href="服务插件开发.html">
+            
+                    
+                    3.1.4 服务插件开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="服务插件开发能力.html">
+            
+                <a href="服务插件开发能力.html">
+            
+                    
+                    3.1.4.1 服务插件开发能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="服务插件开发规范.html">
+            
+                <a href="服务插件开发规范.html">
+            
+                    
+                    3.1.4.2 服务插件开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="性能分析.html">
+            
+                <a href="性能分析.html">
+            
+                    
+                    3.1.5 性能分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="部署与推理能力.html">
+            
+                <a href="部署与推理能力.html">
+            
+                    
+                    3.2 部署与推理能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="AI应用打包.html">
+            
+                <a href="AI应用打包.html">
+            
+                    
+                    3.2.1 AI应用打包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="软件包格式.html">
+            
+                <a href="软件包格式.html">
+            
+                    
+                    3.2.1.1 软件包格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="容器镜像格式.html">
+            
+                <a href="容器镜像格式.html">
+            
+                    
+                    3.2.1.2 容器镜像格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="任务配置管理.html">
+            
+                <a href="任务配置管理.html">
+            
+                    
+                    3.2.2 任务配置管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="任务配置管理能力.html">
+            
+                <a href="任务配置管理能力.html">
+            
+                    
+                    3.2.2.1 任务配置管理能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="任务配置管理规范.html">
+            
+                <a href="任务配置管理规范.html">
+            
+                    
+                    3.2.2.2 任务配置管理规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="资源管理.html">
+            
+                <a href="资源管理.html">
+            
+                    
+                    3.2.3 资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="样本数据采集.html">
+            
+                <a href="样本数据采集.html">
+            
+                    
+                    3.2.4 样本数据采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.4.1" data-path="样本数据采集能力.html">
+            
+                <a href="样本数据采集能力.html">
+            
+                    
+                    3.2.4.1 样本数据采集能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4.2" data-path="样本数据采集规范.html">
+            
+                <a href="样本数据采集规范.html">
+            
+                    
+                    3.2.4.2 样本数据采集规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="协同推理.html">
+            
+                <a href="协同推理.html">
+            
+                    
+                    3.2.5 协同推理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.5.1" data-path="协同推理能力.html">
+            
+                <a href="协同推理能力.html">
+            
+                    
+                    3.2.5.1 协同推理能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5.2" data-path="协同推理规范.html">
+            
+                <a href="协同推理规范.html">
+            
+                    
+                    3.2.5.2 协同推理规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="运维与监控能力.html">
+            
+                <a href="运维与监控能力.html">
+            
+                    
+                    3.3 运维与监控能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="日志.html">
+            
+                <a href="日志.html">
+            
+                    
+                    3.3.1 日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1.1" data-path="日志收集能力.html">
+            
+                <a href="日志收集能力.html">
+            
+                    
+                    3.3.1.1 日志收集能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.1.2" data-path="日志收集规范.html">
+            
+                <a href="日志收集规范.html">
+            
+                    
+                    3.3.1.2 日志收集规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="监控与统计.html">
+            
+                <a href="监控与统计.html">
+            
+                    
+                    3.3.2 监控与统计
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.2.1" data-path="系统监控与计量.html">
+            
+                <a href="系统监控与计量.html">
+            
+                    
+                    3.3.2.1 系统监控与计量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.2" data-path="业务监控.html">
+            
+                <a href="业务监控.html">
+            
+                    
+                    3.3.2.2 业务监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2.3" data-path="监控与统计规范.html">
+            
+                <a href="监控与统计规范.html">
+            
+                    
+                    3.3.2.3 监控与统计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="多设备类型适配能力.html">
+            
+                <a href="多设备类型适配能力.html">
+            
+                    
+                    3.4 多设备类型适配能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="推理框架适配.html">
+            
+                <a href="推理框架适配.html">
+            
+                    
+                    3.4.1 推理框架适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="系统适配.html">
+            
+                <a href="系统适配.html">
+            
+                    
+                    3.4.2 系统适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="硬件适配.html">
+            
+                <a href="硬件适配.html">
+            
+                    
+                    3.4.3 硬件适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="安全能力.html">
+            
+                <a href="安全能力.html">
+            
+                    
+                    3.5 安全能力
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="模型加解密.html">
+            
+                <a href="模型加解密.html">
+            
+                    
+                    3.5.1 模型加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="数据安全.html">
+            
+                <a href="数据安全.html">
+            
+                    
+                    3.5.2 数据安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="License.html">
+            
+                <a href="License.html">
+            
+                    
+                    3.5.3 License
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="场景例子.html">
+            
+                <a href="场景例子.html">
+            
+                    
+                    4 场景例子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="AI应用开发者样例.html">
+            
+                <a href="AI应用开发者样例.html">
+            
+                    
+                    4.1 AI应用开发者样例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="车牌检测业务介绍.html">
+            
+                <a href="车牌检测业务介绍.html">
+            
+                    
+                    4.1.1 车牌检测业务介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="开发与调试.html">
+            
+                <a href="开发与调试.html">
+            
+                    
+                    4.1.2 开发与调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="部署与推理.html">
+            
+                <a href="部署与推理.html">
+            
+                    
+                    4.1.3 部署与推理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="运维与监控.html">
+            
+                <a href="运维与监控.html">
+            
+                    
+                    4.1.4 运维与监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="第三方平台对接样例.html">
+            
+                <a href="第三方平台对接样例.html">
+            
+                    
+                    4.2 第三方平台对接样例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >3.1.3.2 基础功能单元库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x57FA;&#x7840;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5E93;">&#x57FA;&#x7840;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5E93;<a name="ZH-CN_TOPIC_0000001139944251"></a></h1>
+<p>ModelBox&#x6846;&#x67B6;&#x5305;&#x542B;&#x4E00;&#x5957;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5E93;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x529F;&#x80FD;&#x5355;&#x5143;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x5355;&#x5143;&#xFF0C;&#x5FEB;&#x901F;&#x5B8C;&#x6210;&#x81EA;&#x8EAB;&#x4E1A;&#x52A1;&#x5F00;&#x53D1;&#x3002;&#x6839;&#x636E;&#x529F;&#x80FD;&#x5355;&#x5143;&#x7684;&#x7C7B;&#x578B;&#x5206;&#x4E3A;&#xFF1A;&#x6570;&#x636E;&#x63A5;&#x5165;&#x3001;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x3001;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;AI&#x63A8;&#x7406;&#x529F;&#x80FD;&#x5355;&#x5143;&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x63A5;&#x5165;">&#x6570;&#x636E;&#x63A5;&#x5165;<a name="section35451675413"></a></h2>
+<p>&#x7528;&#x6237;&#x8FDB;&#x884C;&#x63A8;&#x7406;&#x7684;&#x539F;&#x59CB;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x89C6;&#x9891;&#x3001;&#x56FE;&#x7247;&#x3001;&#x6587;&#x5B57;&#x3001;&#x58F0;&#x97F3;&#x7B49;&#x591A;&#x5A92;&#x4F53;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x5B58;&#x653E;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x6E90;&#xFF0C;&#x5982;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x3001;&#x6444;&#x50CF;&#x5934;&#x7684;RTSP &#x6D41;&#x3001;&#x4E91;&#x4E0A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#x7B49;&#xFF0C;ModelBox&#x9700;&#x8981;&#x652F;&#x6301;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x4ECE;&#x5E38;&#x7528;&#x7684;&#x6570;&#x636E;&#x6E90;&#x83B7;&#x53D6;&#x591A;&#x5A92;&#x4F53;&#x6570;&#x636E;&#x5730;&#x5740;&#x9012;&#x4EA4;&#x7ED9;&#x540E;&#x9762;&#x7684;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5904;&#x7406;&#x3002;</p>
+<p>ModelBox&#x6570;&#x636E;&#x6E90;&#x8F93;&#x5165;&#x529F;&#x80FD;&#x5355;&#x5143;&#x652F;&#x6301;<a href="#table385mcpsimp">&#x8868;1</a>&#x5E38;&#x7528;&#x7684;&#x8F93;&#x5165;&#x7C7B;&#x578B;&#x3002;</p>
+<p><strong>&#x8868; 1</strong>  &#x6570;&#x636E;&#x63A5;&#x5165;&#x7C7B;&#x578B;</p>
+<p><a name="table385mcpsimp"></a></p>
+<table><thead align="left"><tr id="row390mcpsimp"><th class="cellrowborder" valign="top" width="22.93%" id="mcps1.2.3.1.1"><p id="p392mcpsimp"><a name="p392mcpsimp"></a><a name="p392mcpsimp"></a>&#x6570;&#x636E;&#x63A5;&#x5165;&#x7C7B;&#x578B;</p>
+</th>
+<th class="cellrowborder" valign="top" width="77.07000000000001%" id="mcps1.2.3.1.2"><p id="p394mcpsimp"><a name="p394mcpsimp"></a><a name="p394mcpsimp"></a>&#x529F;&#x80FD;&#x7B80;&#x4ECB;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row395mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p397mcpsimp"><a name="p397mcpsimp"></a><a name="p397mcpsimp"></a>&#x672C;&#x5730;&#x6587;&#x4EF6;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p399mcpsimp"><a name="p399mcpsimp"></a><a name="p399mcpsimp"></a>&#x8BFB;&#x53D6;&#x672C;&#x5730;&#x6587;&#x4EF6;</p>
+</td>
+</tr>
+<tr id="row724417509599"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p417mcpsimp"><a name="p417mcpsimp"></a><a name="p417mcpsimp"></a>&#x672C;&#x5730;&#x6444;&#x50CF;&#x5934;RTSP&#x6D41;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p419mcpsimp"><a name="p419mcpsimp"></a><a name="p419mcpsimp"></a>&#x8BFB;&#x53D6;&#x7F51;&#x7EDC;&#x6444;&#x50CF;&#x5934;&#x89C6;&#x9891;&#x6D41;</p>
+</td>
+</tr>
+<tr id="row400mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p402mcpsimp"><a name="p402mcpsimp"></a><a name="p402mcpsimp"></a>&#x4E91;&#x4E0A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x670D;&#x52A1;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p404mcpsimp"><a name="p404mcpsimp"></a><a name="p404mcpsimp"></a>&#x6BD4;&#x5982;&#x5BF9;&#x63A5;&#x534E;&#x4E3A;&#x4E91;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF08;OBS&#xFF09;&#xFF0C;&#x4ECE;OBS&#x670D;&#x52A1;&#x4E0B;&#x8F7D;&#x6587;&#x4EF6;</p>
+</td>
+</tr>
+<tr id="row405mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p407mcpsimp"><a name="p407mcpsimp"></a><a name="p407mcpsimp"></a>&#x4E91;&#x4E0A;&#x89C6;&#x9891;&#x6D41;&#x670D;&#x52A1;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p409mcpsimp"><a name="p409mcpsimp"></a><a name="p409mcpsimp"></a>&#x6BD4;&#x5982;&#x5BF9;&#x63A5;&#x534E;&#x4E3A;&#x4E91;&#x89C6;&#x9891;&#x63A5;&#x5165;&#x670D;&#x52A1;&#xFF08;VIS&#xFF09;&#xFF0C;&#x4ECE;VIS&#x670D;&#x52A1;&#x83B7;&#x53D6;&#x6D41;&#x5730;&#x5740;</p>
+</td>
+</tr>
+<tr id="row410mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p412mcpsimp"><a name="p412mcpsimp"></a><a name="p412mcpsimp"></a>&#x7B2C;&#x4E09;&#x65B9;&#x670D;&#x52A1;&#x5E73;&#x53F0;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p414mcpsimp"><a name="p414mcpsimp"></a><a name="p414mcpsimp"></a>&#x6BD4;&#x5982;&#x5BF9;&#x63A5;&#x534E;&#x4E3A;VCN&#x5E73;&#x53F0;&#xFF0C;&#x4ECE;VCN&#x5E73;&#x53F0;&#x83B7;&#x53D6;&#x6D41;&#x5730;&#x5740;</p>
+</td>
+</tr>
+<tr id="row420mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p422mcpsimp"><a name="p422mcpsimp"></a><a name="p422mcpsimp"></a>Restful API</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p424mcpsimp"><a name="p424mcpsimp"></a><a name="p424mcpsimp"></a>&#x8C03;&#x7528;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;Restful API&#x83B7;&#x53D6;&#x6D41;&#x5730;&#x5740;</p>
+</td>
+</tr>
+<tr id="row425mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p427mcpsimp"><a name="p427mcpsimp"></a><a name="p427mcpsimp"></a>URL&#x5730;&#x5740;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p429mcpsimp"><a name="p429mcpsimp"></a><a name="p429mcpsimp"></a>&#x8BFB;&#x53D6;URL&#x8DEF;&#x5F84;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x6D41;&#x6216;&#x8005;&#x6587;&#x4EF6;</p>
+</td>
+</tr>
+<tr id="row430mcpsimp"><td class="cellrowborder" valign="top" width="22.93%" headers="mcps1.2.3.1.1 "><p id="p432mcpsimp"><a name="p432mcpsimp"></a><a name="p432mcpsimp"></a>HTTP/HTTPS&#x8BF7;&#x6C42;</p>
+</td>
+<td class="cellrowborder" valign="top" width="77.07000000000001%" headers="mcps1.2.3.1.2 "><p id="p434mcpsimp"><a name="p434mcpsimp"></a><a name="p434mcpsimp"></a>&#x542F;&#x52A8;HTTPS&#x670D;&#x52A1;&#xFF0C;&#x63A5;&#x53D7;&#x7528;&#x6237;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x5408;&#x201C;HTTP/HTTPS&#x54CD;&#x5E94;&#x201D;&#x529F;&#x80FD;&#x5355;&#x5143;&#x914D;&#x5408;&#x4F7F;&#x7528;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>&#x540C;&#x65F6;&#x6570;&#x636E;&#x63A5;&#x5165;&#x529F;&#x80FD;&#x5355;&#x5143;&#x652F;&#x6301;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x6269;&#x5C55;&#x80FD;&#x529B;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x589E;&#x91CF;&#x5F00;&#x53D1;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x6570;&#x636E;&#x8F93;&#x5165;&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x8F93;&#x51FA;">&#x6570;&#x636E;&#x8F93;&#x51FA;<a name="section15781421135416"></a></h2>
+<p>&#x9664;&#x4E86;&#x6570;&#x636E;&#x63A5;&#x5165;&#x529F;&#x80FD;&#x5355;&#x5143;&#x5916;&#xFF0C;ModelBox&#x6846;&#x67B6;&#x8FD8;&#x652F;&#x6301;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x529F;&#x80FD;&#x5355;&#x5143;&#xFF0C;&#x652F;&#x6301;&#x5C06;&#x7528;&#x6237;&#x7684;&#x5206;&#x6790;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;&#x7B2C;&#x4E09;&#x65B9;&#x670D;&#x52A1;&#xFF0C;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#x6216;&#x8005;&#x4E0B;&#x4E00;&#x6B65;&#x5206;&#x6790;&#x3002;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7C7B;&#x578B;&#x5305;&#x542B;&#x591A;&#x5A92;&#x4F53;&#x6587;&#x4EF6;&#x3001;&#x6D88;&#x606F;&#x7B49;&#xFF0C;&#x5E38;&#x7528;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#x5982;<a href="#table438mcpsimp">&#x8868;2</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x8868; 2</strong>  &#x6570;&#x636E;&#x8F93;&#x51FA;&#x7C7B;&#x578B;</p>
+<p><a name="table438mcpsimp"></a></p>
+<table><thead align="left"><tr id="row443mcpsimp"><th class="cellrowborder" valign="top" width="22%" id="mcps1.2.3.1.1"><p id="p445mcpsimp"><a name="p445mcpsimp"></a><a name="p445mcpsimp"></a>&#x6570;&#x636E;&#x8F93;&#x51FA;&#x7C7B;&#x578B;</p>
+</th>
+<th class="cellrowborder" valign="top" width="78%" id="mcps1.2.3.1.2"><p id="p447mcpsimp"><a name="p447mcpsimp"></a><a name="p447mcpsimp"></a>&#x529F;&#x80FD;&#x7B80;&#x4ECB;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row448mcpsimp"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p450mcpsimp"><a name="p450mcpsimp"></a><a name="p450mcpsimp"></a>&#x4E91;&#x4E0A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x670D;&#x52A1;</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p452mcpsimp"><a name="p452mcpsimp"></a><a name="p452mcpsimp"></a>&#x6BD4;&#x5982;&#x5BF9;&#x63A5;&#x534E;&#x4E3A;&#x4E91;&#x5BF9;&#x8C61;&#x5B58;&#x50A8;&#x670D;&#x52A1;&#xFF08;OBS&#xFF09;&#xFF0C;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x81F3;OBS&#x670D;&#x52A1;</p>
+</td>
+</tr>
+<tr id="row453mcpsimp"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p455mcpsimp"><a name="p455mcpsimp"></a><a name="p455mcpsimp"></a>&#x4E91;&#x4E0A;&#x6D88;&#x606F;&#x670D;&#x52A1;</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p457mcpsimp"><a name="p457mcpsimp"></a><a name="p457mcpsimp"></a>&#x6BD4;&#x5982;&#x5BF9;&#x63A5;&#x534E;&#x4E3A;&#x4E91;&#x6570;&#x636E;&#x63A5;&#x5165;&#x670D;&#x52A1;&#xFF08;DIS&#xFF09;&#xFF0C;&#x4E0A;&#x4F20;&#x6D88;&#x606F;&#x81F3;DIS&#x670D;&#x52A1;</p>
+</td>
+</tr>
+<tr id="row458mcpsimp"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p460mcpsimp"><a name="p460mcpsimp"></a><a name="p460mcpsimp"></a>Webhook&#x670D;&#x52A1;</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p462mcpsimp"><a name="p462mcpsimp"></a><a name="p462mcpsimp"></a>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5230;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;HTTP/HTTPS &#x670D;&#x52A1;</p>
+</td>
+</tr>
+<tr id="row463mcpsimp"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p465mcpsimp"><a name="p465mcpsimp"></a><a name="p465mcpsimp"></a>HTTP/HTTPS&#x54CD;&#x5E94;</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p467mcpsimp"><a name="p467mcpsimp"></a><a name="p467mcpsimp"></a>&#x5C06;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x901A;&#x8FC7;HTTP /HTTPS&#x54CD;&#x5E94;&#x56DE;&#x590D;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x5408;&#x201C;HTTP/HTTPS&#x8BF7;&#x6C42;&#x201D;&#x529F;&#x80FD;&#x5355;&#x5143;&#x914D;&#x5408;&#x4F7F;</p>
+</td>
+</tr>
+<tr id="row15447249175020"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p10447849155020"><a name="p10447849155020"></a><a name="p10447849155020"></a>HDMI</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p1544717493506"><a name="p1544717493506"></a><a name="p1544717493506"></a>&#x8F93;&#x51FA;&#x89C6;&#x9891;&#x6D41;&#x5230;&#x8BBE;&#x5907;&#x7684;HDMI&#x63A5;&#x53E3;</p>
+</td>
+</tr>
+<tr id="row938832395111"><td class="cellrowborder" valign="top" width="22%" headers="mcps1.2.3.1.1 "><p id="p13881723125111"><a name="p13881723125111"></a><a name="p13881723125111"></a>RTMP</p>
+</td>
+<td class="cellrowborder" valign="top" width="78%" headers="mcps1.2.3.1.2 "><p id="p1038862316513"><a name="p1038862316513"></a><a name="p1038862316513"></a>&#x8F93;&#x51FA;&#x89C6;&#x9891;&#x6D41;&#x5230;&#x6307;&#x5B9A;RTMP&#x5730;&#x5740;</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>&#x540C;&#x65F6;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x529F;&#x80FD;&#x5355;&#x5143;&#x652F;&#x6301;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x6269;&#x5C55;&#x80FD;&#x529B;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x589E;&#x91CF;&#x5F00;&#x53D1;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x6570;&#x636E;&#x8F93;&#x51FA;&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="&#x6570;&#x636E;&#x5904;&#x7406;">&#x6570;&#x636E;&#x5904;&#x7406;<a name="section194526342541"></a></h2>
+<p>ModelBox&#x63D0;&#x4F9B;&#x5E38;&#x7528;&#x7684;&#x591A;&#x5A92;&#x4F53;&#x6570;&#x636E;&#x5904;&#x7406;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x89C6;&#x9891;&#xFF1A;&#x89C6;&#x9891;&#x89E3;&#x5C01;&#x88C5;&#x3001;&#x89C6;&#x9891;&#x89E3;&#x7801;&#x3001;&#x89C6;&#x9891;&#x7F16;&#x7801;</li>
+<li>&#x97F3;&#x9891;&#xFF1A;&#x97F3;&#x9891;&#x89E3;&#x5C01;&#x88C5;&#x3001;&#x97F3;&#x9891;&#x89E3;&#x7801;&#x3001;&#x97F3;&#x9891;&#x7F16;&#x7801;</li>
+<li>&#x56FE;&#x7247;&#xFF1A;&#x56FE;&#x7247;&#x7F29;&#x653E;&#x3001;&#x56FE;&#x7247;&#x88C1;&#x526A;&#x3001;&#x56FE;&#x7247;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x3001;&#x56FE;&#x7247;&#x586B;&#x5145;&#x3001;&#x56FE;&#x7247;&#x5F52;&#x4E00;&#x5316;&#x3001;&#x56FE;&#x7247;&#x53D6;&#x5747;&#x503C;</li>
+</ul>
+<p>&#x89C6;&#x9891;&#x5904;&#x7406;&#x548C;&#x56FE;&#x7247;&#x5904;&#x7406;&#x652F;&#x6301;CPU&#x3001;GPU&#x3001;Ascend&#x82AF;&#x7247;&#x7B49;&#x786C;&#x4EF6;&#x52A0;&#x901F;&#x3002;</p>
+<h2 id="ai&#x63A8;&#x7406;">AI&#x63A8;&#x7406;<a name="section12550347115414"></a></h2>
+<p>ModelBox&#x63D0;&#x4F9B;&#x5E38;&#x7528;AI&#x63A8;&#x7406;&#x529F;&#x80FD;&#x5355;&#x5143;&#x7ED9;&#x5F00;&#x53D1;&#x8005;&#x4F7F;&#x7528;&#xFF0C;&#x5177;&#x4F53;&#x5982;<a href="#table477mcpsimp">&#x8868;3</a>&#x6240;&#x793A;&#x3002;</p>
+<p><strong>&#x8868; 3</strong>  AI&#x63A8;&#x7406;</p>
+<p><a name="table477mcpsimp"></a></p>
+<table><thead align="left"><tr id="row482mcpsimp"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p484mcpsimp"><a name="p484mcpsimp"></a><a name="p484mcpsimp"></a>&#x63A8;&#x7406;&#x6846;&#x67B6;</p>
+</th>
+<th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="p486mcpsimp"><a name="p486mcpsimp"></a><a name="p486mcpsimp"></a>&#x652F;&#x6301;&#x786C;&#x4EF6;&#x7C7B;&#x578B;</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row193819139100"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p10892720131011"><a name="p10892720131011"></a><a name="p10892720131011"></a>Mindspore</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p589272018106"><a name="p589272018106"></a><a name="p589272018106"></a>Ascend&#x82AF;&#x7247;</p>
+</td>
+</tr>
+<tr id="row1152931202716"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p344123692716"><a name="p344123692716"></a><a name="p344123692716"></a>Tensorflow</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1944123662715"><a name="p1944123662715"></a><a name="p1944123662715"></a>GPU/CPU</p>
+</td>
+</tr>
+<tr id="row492mcpsimp"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p494mcpsimp"><a name="p494mcpsimp"></a><a name="p494mcpsimp"></a>TensorRT</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p496mcpsimp"><a name="p496mcpsimp"></a><a name="p496mcpsimp"></a>GPU</p>
+</td>
+</tr>
+<tr id="row497mcpsimp"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p499mcpsimp"><a name="p499mcpsimp"></a><a name="p499mcpsimp"></a>Pytorch</p>
+</td>
+<td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p501mcpsimp"><a name="p501mcpsimp"></a><a name="p501mcpsimp"></a>GPU/CPU</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>&#x5176;&#x4E2D;&#xFF0C;TensorRT&#x63A8;&#x7406;&#x529F;&#x80FD;&#x5355;&#x5143;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x63D2;&#x4EF6;&#xFF0C;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5176;&#x4ED6;&#x6846;&#x67B6;&#x6A21;&#x578B;&#x8F6C;TensorRT&#x6A21;&#x578B;&#x540E;&#x6A21;&#x578B;&#x63A8;&#x7406;&#x7B97;&#x5B50;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x63A8;&#x7406;&#x6846;&#x67B6;&#x5916;&#xFF0C;ModelBox&#x63A8;&#x7406;&#x57FA;&#x7840;&#x529F;&#x80FD;&#x5355;&#x5143;&#x8FD8;&#x63D0;&#x4F9B;&#x63A8;&#x7406;&#x529F;&#x80FD;&#x5355;&#x5143;&#x57FA;&#x7C7B;&#xFF0C;&#x652F;&#x6301;&#x5F00;&#x53D1;&#x8005;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x81EA;&#x5DF1;&#x7684;&#x63A8;&#x7406;&#x529F;&#x80FD;&#x5355;&#x5143;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="功能单元概念.html" class="navigation navigation-prev " aria-label="Previous page: 3.1.3.1 功能单元概念">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="功能单元开发与调试.html" class="navigation navigation-next " aria-label="Next page: 3.1.3.3 功能单元开发与调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.1.3.2 基础功能单元库","level":"1.3.1.3.2","depth":4,"next":{"title":"3.1.3.3 功能单元开发与调试","level":"1.3.1.3.3","depth":4,"path":"功能单元开发与调试.md","ref":"功能单元开发与调试.md","articles":[]},"previous":{"title":"3.1.3.1 功能单元概念","level":"1.3.1.3.1","depth":4,"path":"功能单元概念.md","ref":"功能单元概念.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础功能单元库.md","mtime":"2021-08-23T03:15:44.919Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-27T07:42:17.750Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
