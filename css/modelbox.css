@@ -336,12 +336,12 @@ div {
 }
 .course-content {
     width: 100%;
-    height: 200px;
+    height: 280px;
     margin: 30px auto !important;
 }
 .course-item {
     height: 100%;
-    width: calc(25% - 15px);
+    width: calc(33% - 20px);
     float: left;
 	cursor: pointer;
 }
@@ -361,5 +361,5 @@ div {
     text-align: center;
 }
 .dev-course {
-	min-height: 300px;
+	min-height: 360px;
 }
