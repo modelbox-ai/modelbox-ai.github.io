@@ -115,6 +115,25 @@ $('.test');
 		newTab.location = './pages/standard-book/index.html';
 	});
 	
+	$('#courseGettingStart').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/try-now/index.html';
+	});
+	
+	$('#courseCarDetection').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/solution/car-detect.html';
+	});
+	
+	$('#courseHandWriting').unbind('click').bind('click', e => {
+		const newTab = window.open();
+		newTab.opener = null;
+		newTab.location = './pages/getting-start/get-start/first-app.html';
+	});
+	
+	
 	$('#try').unbind('click').bind('click', e => {
 		const newTab = window.open();
 		newTab.opener = null;
