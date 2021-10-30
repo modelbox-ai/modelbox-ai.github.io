@@ -25,7 +25,7 @@
 		init();
     };
 	
-	// Ìí¼Ó²Ëµ¥Êó±ê»®ÈëÕ¹¿ª£¬»®³öÊÕÆğµÈÊÂ¼ş
+	// æ·»åŠ èœå•é¼ æ ‡åˆ’å…¥å±•å¼€ï¼Œåˆ’å‡ºæ”¶èµ·ç­‰äº‹ä»¶
 	(() => {
 		$('#documents').mouseenter(e => {
 			$('#documentsItems').css('display', 'block');
@@ -88,7 +88,7 @@
 			navigateClick(e.target);
 		});	
 		
-		// ´ò¿ªÁ´½Ó
+		// æ‰“å¼€é“¾æ¥
 		$('#gotoGithub').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
@@ -99,19 +99,19 @@
 			newTab.opener = null;
 			newTab.location = 'https://www.gitee.com/modelbox/modelbox.git';
 		});
-		// Ê¹ÓÃ½éÉÜ
+		// ä½¿ç”¨ä»‹ç»
 		$('#gotoInstruction').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
 			newTab.location = './pages/getting-start/index.html';
 		});	
-		// ¿ª·¢¹æ·¶
+		// å¼€å‘è§„èŒƒ
 		$('#gotoSpecification').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
 			newTab.location = './pages/standard-book/index.html';
 		});
-		// ¿ª·¢ÎÄµµ
+		// å¼€å‘æ–‡æ¡£
 		$('#instruction').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
@@ -140,7 +140,7 @@
 			}
 		});		
 		
-		// Á¢¼´Ê¹ÓÃ
+		// ç«‹å³ä½¿ç”¨
 		$('#try').unbind('click').bind('click', e => {			
 			$('.navigation-item-page').removeClass('navigation-selected');
 			const navigateClass = ['main-page', 'course-page', 'news-page', 'cases-page'];
@@ -151,7 +151,7 @@
 			init();				
 		});
 
-		// ¿½±´ÊÂ¼ş
+		// æ‹·è´äº‹ä»¶
 		$('.sample-copy-item').unbind('click').bind('click', e => {
 			const value = dockerCommanmd[e.target.getAttribute('copy-type')];
 			const input = document.createElement('input');
@@ -160,7 +160,7 @@
 			input.select();
 			if (document.execCommand('copy')) {
 				document.execCommand('copy');
-				alert('¸´ÖÆ³É¹¦');
+				alert('å¤åˆ¶æˆåŠŸ');
 			}
 			document.body.removeChild(input);
 		});
@@ -168,7 +168,7 @@
 		
 	const samples = [
 		{
-			title: 'Ó²¼şÆ½Ì¨',
+			title: 'ç¡¬ä»¶å¹³å°',
 			content: [
 				{
 					label: 'GPU',
@@ -227,7 +227,7 @@
 			],
 		},
 		{
-			title: '²Ù×÷ÏµÍ³',
+			title: 'æ“ä½œç³»ç»Ÿ',
 			content: [
 				{
 					label: 'Ubuntu',
@@ -238,7 +238,7 @@
 			],
 		},
 		{
-			title: 'ÏµÍ³¼Ü¹¹',
+			title: 'ç³»ç»Ÿæ¶æ„',
 			content: [
 				{
 					label: 'x86',
@@ -255,7 +255,7 @@
 			],
 		},
 		{
-			title: 'ÍÆÀí¼Ü¹¹',
+			title: 'æ¨ç†æ¶æ„',
 			content: [
 				{
 					label: 'Tensorflow 2.1.4',
@@ -290,7 +290,7 @@
 			],
 		},
 		{
-			title: '°æ±¾',
+			title: 'ç‰ˆæœ¬',
 			content: [
 				{
 					label: '1.0.9',
@@ -493,7 +493,7 @@
 				$('.course-card').css('height', height + 'px');
 				$('#course').css('height', ((height + 30) * cardLines) + 'px');
 			}
-			// ÉèÖÃ¿Î³ÌÄÚÈİÏÔÊ¾µÄĞĞÊı
+			// è®¾ç½®è¯¾ç¨‹å†…å®¹æ˜¾ç¤ºçš„è¡Œæ•°
 			if($('.course-content-text')[0]) {
 				let height = Number($('.course-content-text').css('height').replace('px', ''));
 				const oldHeight = height;
