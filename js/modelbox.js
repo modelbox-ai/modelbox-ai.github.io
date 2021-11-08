@@ -103,7 +103,7 @@
 		$('#gotoInstruction').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = './pages/getting-start/index.html';
+			newTab.location = 'http://modelbox-ai.com/modelbox-book';
 		});	
 		// 开发规范
 		$('#gotoSpecification').unbind('click').bind('click', e => {
