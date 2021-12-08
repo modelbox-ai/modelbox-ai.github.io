@@ -13,42 +13,42 @@
 					ModelBox
 				</div>
 				<div class="navigation-select-item" obj-id="documents">
-					<div style="float: left" id="documents">文档</div>
+					<div style="float: left" id="documents">�ĵ�</div>
 					<div style="width: 16px; height: 16px; background-image: url(./img/unfold.svg); float: left; margin-left: 5px; margin-top: 4px" id="documentsIcon"></div>
 					<ul class="drop-select" id="documentsItems">
-						<li class="drop-select-item" id="gotoGettingStart">上手指南</li>
-						<li class="drop-select-item" id="gotoDevelopDoc">开发文档</li>
-						<li class="drop-select-item" id="gotoSpecification">规范介绍</li>
+						<li class="drop-select-item" id="gotoGettingStart">����ָ��</li>
+						<li class="drop-select-item" id="gotoDevelopDoc">�����ĵ�</li>
+						<li class="drop-select-item" id="gotoSpecification">�淶����</li>
 						<li class="drop-select-item" id="gotoAPI">API</li>
 					</ul>
 				</div>
 				<div class="navigation-select-item" obj-id="repository">
-					<div style="float: left" id="codes">代码</div>
+					<div style="float: left" id="codes">����</div>
 					<div style="width: 16px; height: 16px; background-image: url(./img/unfold.svg); float: left; margin-left: 5px; margin-top: 4px" id="codesIcon"></div>
 					<ul class="drop-select" id="codesItems">
 						<li class="drop-select-item" id="gotoGithub">GitHub</li>
 						<li class="drop-select-item" id="gotoGitee">Gitee</li>
 					</ul>
 				</div>				
-				<div class="navigation-item navigation-item-page" page-id="course-page" id="navigateCourse">教程</div>
-				<div class="navigation-item navigation-item-page" page-id="news-page">动态</div>
-				<div class="navigation-item navigation-item-page" id="community">社区</div>
-				<div class="navigation-item navigation-item-page" page-id="cases-page" style="">案例</div>
+				<div class="navigation-item navigation-item-page" page-id="course-page" id="navigateCourse">�̳�</div>
+				<div class="navigation-item navigation-item-page" page-id="news-page">��̬</div>
+				<div class="navigation-item navigation-item-page" id="community">����</div>
+				<div class="navigation-item navigation-item-page" page-id="cases-page" style="">����</div>
             </div>
 			
 			<div class="language-switch" id="languageSwitch">
-				<div style="float: left" id="language">简体中文</div>
+				<div style="float: left" id="language">��������</div>
 				<div style="width: 16px; height: 16px; background-image: url(./img/unfold.svg); float: left; margin-left: 5px; margin-top: 2px" id="languageIcon"></div>
 				<ul class="drop-select" id="languageItems">
-					<li class="drop-select-item">简体中文</li>
+					<li class="drop-select-item">��������</li>
 				</ul>
 			</div>
 
 			<div class="sample-page" style="display: none">
 				<div class="banner" style="background-image: url('./img/banner-sample.png')">
 					<div class="banner-placeholder"></div>
-					<div class="padding-rate banner-title">ModelBox开发镜像</div>
-					<div class="padding-rate banner-content">提供多种推理镜像，方便开发者创建与开发AI应用。</div>
+					<div class="padding-rate banner-title">ModelBox��������</div>
+					<div class="padding-rate banner-content">�ṩ�����������񣬷��㿪���ߴ����뿪��AIӦ�á�</div>
 					<div class="banner-button padding-rate width-rate">
 					</div>
 				</div>
@@ -57,49 +57,47 @@
 						<div id="sampleHolder">
 						</div>
 						<div class="sample-item" style="height: 80px; margin-top: 30px; max-width: 1100px">
-							<div style="float: left; width: 200px; padding-top: 5px; height: 100%">Docker安装命令</div>
+							<div style="float: left; width: 200px; padding-top: 5px; height: 100%">Docker��װ����</div>
 							<div class="sample-ta-item" id="dockerCommand">docker pull modelbox/modelbox_cuda101_develop</div>
 							<div class="sample-copy-item" copy-type="install"></div>
 						</div>
 						<div class="sample-item" style="height: 80px; margin-top: 30px; max-width: 1100px">
-							<div style="float: left; width: 200px; padding-top: 5px; height: 100%">Docker启动脚本</div>
+							<div style="float: left; width: 200px; padding-top: 5px; height: 100%">Docker�����ű�</div>
 							<div class="sample-ta-item" id="dockerScript">
 								#! /bin/bash <br>
 								# ssh map port [modify] <br>
 								SSH_MAP_PORT=50011 <br>
-								……
+								������
 							</div>
 							<div class="sample-copy-item" copy-type="script"></div>
 						</div>	
-					</div>
-				
+					</div>				
 				</div>
 				<div id="sample-install-guide" style="background-image: url('./img/install-guaide.png'); padding: 50px 100px; background-size: cover">
-					<div class="width-rate">
-						<div style="font-size: 22px; font-weight: bold">安装指南</div>
-						<div style="font-size: 18px; font-weight: bold; margin-top: 30px">Docker安装ModelBox开发镜像</div>
-						<div style="font-size: 17px; margin-top: 15px">准备工作：确认Ubuntu版本>=16.04；确认已安装Docker。</div>				
-						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">1.获取ModelBox开发镜像</div>				
-						<div style="font-size: 17px; margin-top: 15px">使用SSH工具登陆服务器，自行选择路径，执行以上Docker安装命令行下载ModelBox开发镜像。</div>				
-						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">2.创建启动脚本</div>				
-						<div style="font-size: 17px; margin-top: 15px">在服务器中自行选择路径，创建Docker启动脚本，或在本地将以上脚本按需修改后，粘贴到SSH终端中执行。</div>				
-						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">3.执行命令进入ModelBox</div>
-						<div style="font-size: 17px; margin-top: 15px">执行命令查看本服务器已启动的所有镜像，保存新启动的镜像ID。</div>
+					<div class="width-rate">									
+						<div style="font-size: 22px; font-weight: bold">��װָ��</div>
+						<div style="font-size: 18px; font-weight: bold; margin-top: 30px">Docker��װModelBox��������</div>
+						<div style="font-size: 17px; margin-top: 15px">׼��������ȷ��Ubuntu�汾>=16.04��ȷ���Ѱ�װDocker</div>				
+						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">1.��ȡModelBox��������</div>				
+						<div style="font-size: 17px; margin-top: 15px">ʹ��SSH���ߵ�½������������ѡ��·����ִ������Docker��װ����������ModelBox��������</div>				
+						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">2.���������ű�</div>				
+						<div style="font-size: 17px; margin-top: 15px">�ڷ�����������ѡ��·��������Docker�����ű������ڱ��ؽ����Ͻű������޸ĺ�ճ����SSH�ն���ִ��</div>				
+						<div style="font-size: 17px; font-weight: bold; margin-top: 15px">3.ִ���������ModelBox</div>
+						<div style="font-size: 17px; margin-top: 15px">ִ������鿴�������������������о��񣬱����������ľ���ID</div>
 						<div style="font-size: 17px; margin-top: 15px; font-size: 14px; border: 1px solid #ddd; height: 24px; padding: 5px">docker ps -a | grep modelbox</div>
-						<div style="font-size: 17px; margin-top: 15px">执行以下命令进入ModelBox</div>
-						<div style="font-size: 17px; margin-top: 15px; font-size: 14px; border: 1px solid #ddd; height: 24px; padding: 5px">docker exec -it $docker_id bash # 其中$docker_id 指新启动的镜像ID</div>
+						<div style="font-size: 17px; margin-top: 15px">ִ�������������ModelBox</div>
+						<div style="font-size: 17px; margin-top: 15px; font-size: 14px; border: 1px solid #ddd; height: 24px; padding: 5px">docker exec -it $docker_id bash # ����$docker_id ָ�������ľ���ID</div>
 						<div style="font-size: 17px; margin-top: 20px; margin-bottom: 50px">
-							<span>更多详情请进入</span>
-							<a style="margin-left: 5px" href="./pages/try-now/index.html" target="_blank">ModelBox快速入门</a>
+							<span>�������������</span>
+							<a style="margin-left: 5px" href="./pages/try-now/index.html" target="_blank">ModelBox��������</a>
 						</div>										
-					</div>				
+					</div>
 				</div>				
 			</div>	
-			
 			<div class="news-page" style="display: none">
 				<div class="banner" style="background-image: url('./img/banner-news.png')">
 					<div class="banner-placeholder"></div>
-					<div class="padding-rate banner-title">ModelBox最新动态</div>
+					<div class="padding-rate banner-title">ModelBox���¶�̬</div>
 					<div class="padding-rate banner-content"></div>
 					<div class="banner-button padding-rate width-rate">
 					</div>
@@ -112,8 +110,8 @@
 			<div class="cases-page" style="display: none">
 				<div class="banner" style="background-image: url('./img/banner-case.png')">
 					<div class="banner-placeholder"></div>
-					<div class="padding-rate banner-title">ModelBox应用案例</div>
-					<div class="padding-rate banner-content">AI应用统一框架开发，便捷端边云AI协同部署，助力城市、园区、工业、政务等智慧解决方案落地。</div>
+					<div class="padding-rate banner-title">ModelBoxӦ�ð���</div>
+					<div class="padding-rate banner-content">AIӦ��ͳһ��ܿ�������ݶ˱���AIЭͬ�����������С�԰������ҵ��������ǻ۽��������ء�</div>
 					<div class="banner-button padding-rate width-rate">
 					</div>
 				</div>
@@ -124,7 +122,7 @@
 			<div class="course-page" style="display: none">
 				<div class="banner" style="background-image: url('./img/banner-course.png')">
 					<div class="banner-placeholder"></div>
-					<div class="padding-rate banner-title">ModelBox视频教程</div>
+					<div class="padding-rate banner-title">ModelBox��Ƶ�̳�</div>
 					<div class="padding-rate banner-content"></div>
 					<div class="banner-button padding-rate width-rate">
 					</div>
@@ -138,86 +136,86 @@
 				<div class="banner">
 					<div class="banner-placeholder"></div>
 					<div class="padding-rate banner-title">ModelBox</div>
-					<div class="padding-rate banner-content">ModelBox是一套统一的端边云AI应用开发和运行框架的规范，以及在此规范上所实现的运行时框架。在此基础上，各参与方可贡献相关的代码、工具、平台、文档等相关内容。</div>
+					<div class="padding-rate banner-content">ModelBox��һ��ͳһ�Ķ˱���AIӦ�ÿ��������п�ܵĹ淶���Լ��ڴ˹淶����ʵ�ֵ�����ʱ��ܡ��ڴ˻����ϣ������뷽�ɹ�����صĴ��롢���ߡ�ƽ̨���ĵ����������</div>
 					<div class="banner-button padding-rate width-rate">
-						<button class="banner-button-use" id="try">立即使用</button>
-						<button class="banner-button-details" id="gotoInstruction">使用介绍</button>
+						<button class="banner-button-use" id="try">����ʹ��</button>
+						<button class="banner-button-details" id="gotoInstruction">ʹ�ý���</button>
 					</div>
 				</div>
 				<div id="procedure" class="content-gap width-rate procedure" style="background-image: url('./img/procedure.png'); background-size: cover; margin-top: -10px !important">
-					<div class="content-item-title">整体流程</div>
+					<div class="content-item-title">��������</div>
 					<div class="procedure-content"></div>
 				</div>				
 				<div class="content-gap width-rate advantage" id="advantage">
-					<div class="content-item-title">ModelBox优势</div>
+					<div class="content-item-title">ModelBox����</div>
 					<div class="advantage-content-line">
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-quick.png')"></div>
-							<div class="ad-label">高效开发</div>
-							<div class="ad-content">AI推理业务可视化编排开发，功能模块化，功能单元丰富，多语言支持</div>
+							<div class="ad-label">��Ч����</div>
+							<div class="ad-content">AI����ҵ����ӻ����ſ���������ģ�黯�����ܵ�Ԫ�ḻ��������֧��</div>
 						</div>
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-reliability.png')"></div>
-							<div class="ad-label">高性能</div>
-							<div class="ad-content">Pipeline并发运行，数据计算智能调度，资源管理调度精细化，业务运行更高效</div>
+							<div class="ad-label">������</div>
+							<div class="ad-content">Pipeline�������У����ݼ������ܵ��ȣ���Դ�������Ⱦ�ϸ����ҵ�����и���Ч</div>
 						</div>
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-same.png')"></div>
-							<div class="ad-label">屏蔽软硬件差异</div>
-							<div class="ad-content">跨异构硬件、操作系统、推理框架，资源利用更便捷高效</div>
+							<div class="ad-label">������Ӳ������</div>
+							<div class="ad-content">���칹Ӳ��������ϵͳ��������ܣ���Դ���ø���ݸ�Ч</div>
 						</div>
 					</div>
 					<div class="advantage-content-line">
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-all.png')"></div>
-							<div class="ad-label">全场景开发</div>
-							<div class="ad-content">支持视频、语音、文本、NLP场景的AI应用开发</div>
+							<div class="ad-label">ȫ��������</div>
+							<div class="ad-content">֧����Ƶ���������ı���NLP������AIӦ�ÿ���</div>
 						</div>
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-merge.png')"></div>
-							<div class="ad-label">易于集成</div>
-							<div class="ad-content">便捷集成云上功能单元，端边云数据无缝交换</div>
+							<div class="ad-label">���ڼ���</div>
+							<div class="ad-content">��ݼ������Ϲ��ܵ�Ԫ���˱��������޷콻��</div>
 						</div>
 						<div class="advantage-content-item">
 							<div class="ad-icon" style="background-image: url('./img/ad-maintain.png')"></div>
-							<div class="ad-label">易于维护</div>
-							<div class="ad-content">状态可视化，应用，功能单元性能实时监控</div>
+							<div class="ad-label">����ά��</div>
+							<div class="ad-content">״̬���ӻ���Ӧ�ã����ܵ�Ԫ����ʵʱ���</div>
 						</div>
 					</div>
 				</div>
 				<div id="forWho" class="content-gap width-rate for-who">
-					<div class="content-item-title">适用对象</div>
+					<div class="content-item-title">���ö���</div>
 					<div class="for-who-content">
 						<div class="obj-half" style="padding-right: 20px">
 							<div class="obj-item" style="background-image: url('./img/for-ai.png')"></div>
 							<div class="obj-item">
-								<div class="obj-item-title">AI应用开发者</div>
-								<div class="obj-item-content">AI应用开发者完成模型训练后，适用ModelBox规范开发成AI应用，即可快速部署在端、边、云，并快速对接业务系统与实现落地</div>
+								<div class="obj-item-title">AIӦ�ÿ���</div>
+								<div class="obj-item-content">AIӦ�ÿ��������ģ��ѵ��������ModelBox�淶������AIӦ�ã����ɿ��ٲ����ڶˡ��ߡ��ƣ������ٶԽ�ҵ��ϵͳ��ʵ�����</div>
 							</div>
 						</div>
 						<div class="obj-half" style="padding-left: 20px">
 							<div class="obj-item" style="background-image: url('./img/for-plateform.png')"></div>
 							<div class="obj-item">
-								<div class="obj-item-title">平台集成开发者</div>
-								<div class="obj-item-content">平台集成开发者通常已经拥有自己的平台，在平台中集成ModelBox框架，可更好对接AI应用，从而向平台用户提供一个更具竞争力的AI平台或业务系统。</div>
+								<div class="obj-item-title">ƽ̨���ɿ���</div>
+								<div class="obj-item-content">ƽ̨���ɿ�����ͨ���Ѿ�ӵ���Լ���ƽ̨����ƽ̨�м���ModelBox��ܣ��ɸ��öԽ�AIӦ�ã��Ӷ���ƽ̨�û��ṩһ�����߾�������AIƽ̨��ҵ��ϵͳ</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="content-gap adjust-list" id="" style="height: 500px; background-image: url('./img/adjust-list.png')">
-					<div class="content-item-title">适配列表</div>
+					<div class="content-item-title">�����б�</div>
 					<div class="adjust-item">
-						<div class="adjust-item-title">硬件适配层</div>
+						<div class="adjust-item-title">Ӳ������</div>
 						<div class="adjust-item-content">
 							<div class="adjust-item-content-item">X86+GPU</div>
-							<div class="adjust-item-content-item">ARM+Ascend芯片</div>
-							<div class="adjust-item-content-item">X86+Ascend芯片</div>
-							<div class="adjust-item-content-item my-ellipsis" title="Hi35xx(NINIE) 需定制，根据系统编译">Hi35xx(NINIE)<span style="font-size: 10px; margin-left: 8px; color: #666">需定制，根据系统编译</span></div>
+							<div class="adjust-item-content-item">ARM+AscendоƬ</div>
+							<div class="adjust-item-content-item">X86+AscendоƬ</div>
+							<div class="adjust-item-content-item my-ellipsis" title="Hi35xx(NINIE) �趨�ƣ�����ϵͳ��">Hi35xx(NINIE)<span style="font-size: 10px; margin-left: 8px; color: #666">�趨�ƣ�����ϵͳ��</span></div>
 							<div style="margin-top: 10px; color: #666">...</div>
 						</div>
 					</div>
 					<div class="adjust-item">
-						<div class="adjust-item-title">推理框架</div>
+						<div class="adjust-item-title">�������</div>
 						<div class="adjust-item-content">
 							<div class="adjust-item-content-item">Tensorflow</div>
 							<div class="adjust-item-content-item">TensorRT</div>
@@ -227,7 +225,7 @@
 						</div>					
 					</div>
 					<div class="adjust-item">
-						<div class="adjust-item-title">操作系统</div>
+						<div class="adjust-item-title">����ϵͳ</div>
 						<div class="adjust-item-content">
 							<div class="adjust-item-content-item">Ubuntu</div>
 							<div class="adjust-item-content-item">EulerOS</div>
@@ -238,26 +236,26 @@
 					</div>		
 				</div>
 				<div class="content-gap used-case" id="" style="height: 720px; background-image: url('./img/sample-bg.png'); margin-top: -55px">
-					<div class="used-case-title content-item-title">应用案例</div>
+					<div class="used-case-title content-item-title">Ӧ�ð���</div>
 					<div class="used-case-content" style="height: calc(100% - 145px)">
 						<div class="slider" style="background-image: url(./img/slide-l.svg)"></div>
 						<div style="width: calc(100% - 460px); height: 100%; float: left; margin-left: 25px; background-image: url('./img/app-sample.png'); background-size: cover"></div>
 						<div style="width: 260px; height: calc(100% - 40px); float: left; margin-right: 25px; background: #fff; box-shadow: 2px 2px 2px 2px #ccc; padding: 20px; font-size: 14px">
-							<div style="font-size: 16px; height: 15%">智慧出行</div>
+							<div style="font-size: 16px; height: 15%">�ǻ۳���</div>
 							<div style="height: 40%">
-								<div style="font-weight: bold">业务算法：</div>
+								<div style="font-weight: bold">ҵ���㷨</div>
 								<ul>
-									<li>乘客人数检测</li>
-									<li>打电话动作检测</li>
-									<li>抽烟动作检测</li>
-									<li>人脸属性</li>
+									<li>�˿��������</li>
+									<li>��绰�������</li>
+									<li>���̶������</li>
+									<li>��������</li>
 								</ul>
 							</div>
 							<div>
-								<div style="font-weight: bold">框架优势：</div>
+								<div style="font-weight: bold">�������</div>
 								<ul>
-									<li>业务算法推理性能提升8 ~ 100倍，大幅降低成本；</li>
-									<li>业务算法可部署在多种异构硬件上运行，屏适配多种操作系统、AI推理框架。</li>
+									<li>ҵ���㷨������������8 ~ 100����������ͳɱ�</li>
+									<li>ҵ���㷨�ɲ����ڶ����칹Ӳ�������У���������ֲ���ϵͳ��AI�������</li>
 								</ul>
 							</div>
 						</div>
@@ -265,7 +263,7 @@
 					</div>
 				</div>
 				<div class="content-gap partners" id="" style="margin-top: -50px; margin-bottom: 50px">
-					<div class="content-item-title">合作企业</div>
+					<div class="content-item-title">������ҵ</div>
 					<div class="partners-content" style="height: 120px">
 						<div class="partners-item" style="background-image: url('./img/cooperation1.png')"></div>
 						<div class="partners-item" style="background-image: url('./img/cooperation2.png')"></div>
@@ -278,40 +276,40 @@
             <div class="page-bottom" style="height: 220px; width: 70%; padding: 0 15%; background-color: #f3f3f3; font-size: 14px">
 				<div style="float: left; height: 100%; width: 35%">
 					<div style="float: left; height: calc(100% - 60px); width: calc(50% - 60px); padding: 30px">
-						<div style="font-weight: bold">资源</div>
-						<a style="margin-top: 20px; display: block; width: 60px" href="./pages/getting-start/index.html" target="_blank">开发文档</a>
-						<a style="margin-top: 10px; display: block; width: 60px; cursor: pointer; text-decoration: underline; color: -webkit-link" id="footerCourse" target="_blank">视频教程</a>
-						<a style="margin-top: 10px; display: block; width: 30px" href="https://marketplace.huaweicloud.com/markets/aihub/article/list" target="_blank">社区</a>
+						<div style="font-weight: bold">��Դ</div>
+						<a style="margin-top: 20px; display: block; width: 60px" href="./pages/getting-start/index.html" target="_blank">�����ĵ�</a>
+						<a style="margin-top: 10px; display: block; width: 60px; cursor: pointer; text-decoration: underline; color: -webkit-link" id="footerCourse" target="_blank">��Ƶ�̳�</a>
+						<a style="margin-top: 10px; display: block; width: 30px" href="https://marketplace.huaweicloud.com/markets/aihub/article/list" target="_blank">����</a>
 					</div>
 					<div style="float: left; height: calc(100% - 60px); width: calc(50% - 60px); padding: 30px">
-						<div style="font-weight: bold">产品链接</div>
-						<a style="margin-top: 20px; display: block; width: 70px" target="_blank" href="https://www.huaweicloud.com/">华为云官网</a>
+						<div style="font-weight: bold">��Ʒ����</div>
+						<a style="margin-top: 20px; display: block; width: 70px" target="_blank" href="https://www.huaweicloud.com/">��Ϊ�ƹ���</a>
 						<a style="margin-top: 10px; display: block; width: 70px" target="_blank" href="https://www.huaweicloud.com/product/modelarts.html">ModelArts</a>
-						<a style="margin-top: 10px; display: block; width: 75px" target="_blank" href="https://www.huaweicloud.com/product/hilens.html">华为HiLens</a>
+						<a style="margin-top: 10px; display: block; width: 75px" target="_blank" href="https://www.huaweicloud.com/product/hilens.html">��ΪHiLens</a>
 					</div>
 				</div>
 				<div style="float: left; height: 100%; width: calc(65% - 1px); border-left: 1px solid #e2e2e2">
 					<div style="float: left; height: calc(100% - 60px); width: calc(50% - 60px); padding: 30px">
-						<div style="font-weight: bold">ModelBox技术交流群</div>
+						<div style="font-weight: bold">ModelBox��������Ⱥ</div>
 						<div style="margin-top: 20px; height: calc(100% - 20px)">
 							<div style="float: left; height: 100px; width: 100px;" class="qrcode">
 								<div style="background-size: contain; background-image: url('./img/qr-code1.png'); height: 100%; width: 100%"></div>
 							</div>
 							<div style="float: left; height: calc(100% - 25px); width: calc(100% - 150px); margin-left: 30px; margin-top: 25px">
-								<div>随时随地涨知识，</div>
-								<div>快速学习共成长！</div>
+								<div>��ʱ�����֪ʶ��</div>
+								<div>����ѧϰ���ɳ���</div>
 							</div>
 						</div>
 					</div>
 					<div style="float: left; height: calc(100% - 60px); width: calc(50% - 60px); padding: 30px">
-						<div style="font-weight: bold">华为云AI公众号</div>
-						<div style="margin-top: 20px; height: calc(100% - 20px)">
+						<div style="font-weight: bold">��Ϊ��AI���ں�</div>
+						<div style="margin-top: 20px; height: calc(100% - 20px)">-
 							<div style="float: left; height: 100px; width: 100px" class="qrcode">
 								<div style="background-size: contain; background-image: url('./img/qr-code2.png'); height: 100%; width: 100%"></div>
 							</div>
 							<div style="float: left; height: calc(100% - 25px); width: calc(100% - 150px); margin-left: 30px; margin-top: 25px">
-								<div>回复“新手福利”，</div>
-								<div>还有特别惊喜哦！</div>
+								<div>�ظ������ָ�������</div>
+								<div>�����ر�ϲŶ��</div>
 							</div>
 						</div>		
 					</div>				
