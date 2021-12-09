@@ -112,16 +112,16 @@
 			newTab.location = './pages/standard-book/index.html';
 		});
 		// 开发文档
-		$('#instruction').unbind('click').bind('click', e => {
+		$('#gotoDevelopDoc').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = './pages/getting-start/index.html';
+			newTab.location = 'http://modelbox-ai.com/modelbox-book';
 		});
 		// API
-		$('#instruction').unbind('click').bind('click', e => {
+		$('#gotoAPI').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = './pages/getting-start/api/api.html';
+			newTab.location = 'http://modelbox-ai.com/modelbox-book/api/api.html';
 		});		
 		$('#gotoGettingStart').unbind('click').bind('click', e => {
 			const newTab = window.open();
