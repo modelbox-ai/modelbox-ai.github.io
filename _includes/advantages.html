@@ -1,0 +1,28 @@
+<div class="advantage-banner">
+  <h5 class="modelbox-banner-header">
+    {{site.data.locale.modelBoxHighlights}}
+  </h5>
+
+  {%- if site.data.advantages -%}
+  <div class="container">
+    <div class="row">
+      {%- for item in site.data.advantages -%}
+      <div class="col-lg-4 col-md-12">
+        <div class="modelbox-card-row" style="padding: 30px">
+          <div>
+            <img
+              class="modelbox-card-img"
+              src="{{ item.img  | prepend: site.img_path }}"
+            />
+          </div>
+          <div>
+            <h6 class="modelbox-card-header">{{ item.header }}</h6>
+            <div class="modelbox-card-content">{{ item.content }}</div>
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
+</div>

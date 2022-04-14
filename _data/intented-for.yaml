@@ -1,0 +1,11 @@
+- header: AI应用开发者
+  content: >-
+    AI应用开发者完成模型训练后，适用ModelBox规范开发成AI应用，
+    即可快速部署在端、边、云，并快速对接业务系统与实现落地。
+  img: for-ai.png
+
+- header: 平台集成开发者
+  content: >-
+    平台集成开发者通常已经拥有自己的平台，在平台中集成ModelBox框架，
+    可更好对接AI应用，从而向平台用户提供一个更具竞争力的AI平台或业务系统。
+  img: for-platform.png

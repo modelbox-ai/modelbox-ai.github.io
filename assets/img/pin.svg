@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>图钉</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8,28.6809162 C9.1045695,28.6809162 10,27.7854857 10,26.6809162 C10,25.5763467 9.1045695,24.6809162 8,24.6809162 C6.8954305,24.6809162 6,25.5763467 6,26.6809162 C6,27.7854857 6.8954305,28.6809162 8,28.6809162 Z" id="path-1"></path>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-3" cx="9" cy="12" rx="9" ry="4"></ellipse>
+        <filter x="-2.8%" y="-6.2%" width="105.6%" height="112.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-5" cx="9" cy="2.66666667" rx="6" ry="2.66666667"></ellipse>
+        <filter x="-4.2%" y="-9.4%" width="108.3%" height="118.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.499395461">
+        <g id="ModelBox" transform="translate(-436.000000, -885.000000)">
+            <g id="编组-32" transform="translate(320.000000, 852.000000)">
+                <g id="图钉" transform="translate(110.000000, 31.000000)">
+                    <g id="椭圆形" opacity="0.264136905">
+                        <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="编组-15" transform="translate(14.154763, 15.812616) rotate(25.000000) translate(-14.154763, -15.812616) translate(5.154763, 2.812616)">
+                        <polygon id="路径-2" fill="#979797" fill-rule="nonzero" points="7.97388484 25.0329027 10.2519583 14.398151 7.24493418 14.6084226"></polygon>
+                        <g id="椭圆形">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M8.9624379,11.4125521 L8.9624379,5 L8.9624379,11.4125521 Z" id="路径-2" stroke="#979797" stroke-width="3" transform="translate(8.962438, 8.206276) rotate(3.000000) translate(-8.962438, -8.206276) "></path>
+                        <g id="椭圆形">
+                            <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

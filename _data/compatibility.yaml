@@ -1,0 +1,20 @@
+# compatibility 适配列表
+- title: 硬件适配
+  content:
+    - title: X86+GPU
+    - title: ARM+Ascend芯片
+    - title: X86+Ascend芯片
+    - title: Hi35xx(NINIE)
+      tip: 需定制，根据系统..
+
+- title: 推理框架
+  content:
+    - title: Tensorflow
+    - title: TensorRT
+    - title: PyTorch
+    - title: Mindspore
+
+- title: 操作系统
+  content:
+    - title: Ubuntu
+    - title: EulerOS

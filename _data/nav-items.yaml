@@ -1,0 +1,44 @@
+# 导航栏
+
+# TODO 开发文档/白皮书链接
+- title: 文档
+  type: dropdown
+  dropdown:
+    - title: 开发文档
+      type: link
+      link: http://modelbox-ai.com/modelbox-book/
+    - title: 白皮书
+      type: link
+      link: /standard-book/index.html
+
+- title: 代码
+  type: dropdown
+  dropdown:
+    - title: GitHub
+      type: link
+      link: https://github.com/modelbox-ai/modelbox
+    - title: Gitee
+      type: link
+      link: https://gitee.com/modelbox/modelbox
+
+- title: 教程
+  type: link
+  link: https://space.bilibili.com/503635713/channel/seriesdetail?sid=2130880&ctype=0
+
+- title: 社区
+  type: link
+  link: https://developer.huaweicloud.com/develop/aigallery/article/list
+
+- title: 案例
+  type: link
+  link: http://modelbox-ai.com/modelbox-book/solution/solution.html
+
+- title: 下载
+  type: dropdown
+  dropdown:
+    - title: 镜像
+      type: link
+      link: https://hub.docker.com/u/modelbox
+    - title: Releases
+      type: link
+      link: https://github.com/modelbox-ai/modelbox/releases

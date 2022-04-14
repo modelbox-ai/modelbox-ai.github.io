@@ -1,0 +1,741 @@
+@import 'modelbox';
+
+// 内容宽度
+$modelbox-content-width: 1000px !default;
+$modelbox-content-margin: 100px !default;
+$modelbox-content-margin-on-palm: 10px !default;
+
+$modelbox-on-palm: 800px !default;
+$modelbox-on-laptop: 1000px !default;
+$--modelbox-header-height: 50px;
+$--modelbox-footer-height: 150px;
+$--modelbox-banner-card-gap: 8px;
+
+.flex-rows {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $--modelbox-common-space-base;
+}
+
+.flex-columns {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $--modelbox-common-space-base;
+}
+
+// 导航样式
+.modelbox-navbar {
+  margin: 0 $modelbox-content-margin;
+  background-color: $--modelbox-common-color-bg-white-normal !important;
+}
+
+// 导航样式
+.modelbox-navbar-wrapper {
+  background-color: $--modelbox-common-color-bg-white-normal !important;
+}
+
+.modelbox-banner-header {
+  font-weight: bold;
+  color: $--modelbox-theme-color;
+}
+
+.modelbox-card-row {
+  @extend .flex-rows;
+  align-items: center;
+  gap: $--modelbox-common-space-3x;
+  text-align: center;
+}
+
+.modelbox-card-img {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.modelbox-card-header {
+  color: $--modelbox-common-color-text-primary;
+}
+
+.modelbox-card-content {
+  font-size: $--modelbox-common-font-size-1;
+  color: $--modelbox-common-color-text-secondary;
+}
+
+// 文本溢出
+.modelbox-text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// header
+.modelbox-site-header {
+  border-bottom: 1px solid $--modelbox-common-color-line-dividing;
+  min-height: $--modelbox-space-unit * 1.8;
+  position: fixed;
+  background-color: $--modelbox-base-color-bg-6;
+  width: 100%;
+}
+
+// 标题样式
+.modelbox-header-wrapper {
+  @extend .flex-columns;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - (#{$modelbox-content-margin} * 2));
+  max-width: -webkit-calc(100% - (#{$modelbox-content-margin} * 2));
+
+  @include media-query($modelbox-on-palm) {
+    max-width: calc(100% - (#{$modelbox-content-margin-on-palm} * 2));
+    max-width: -webkit-calc(100% - (#{$modelbox-content-margin-on-palm} * 2));
+  }
+
+  .header-title {
+    @extend .flex-columns;
+    gap: $--modelbox-common-space-3x;
+    padding: $--modelbox-common-space-2x $--modelbox-common-space-base;
+    border-bottom: 4px solid $--modelbox-theme-color;
+
+    .title-icon {
+      width: 40px;
+    }
+
+    .title-text {
+      font-size: $--modelbox-common-font-size-4;
+      font-weight: bold;
+      font-family: $--modelbox-default-font-family;
+      a {
+        color: $--modelbox-theme-color !important;
+
+        &:hover {
+          color: $--modelbox-theme-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// 内容分割线样式
+.modelbox-dividing-line {
+  border-left: 1px dashed $--modelbox-common-color-line-dividing;
+  height: $--modelbox-footer-height;
+
+  @include media-query($modelbox-on-palm) {
+    border-top: 1px dashed $--modelbox-common-color-line-dividing;
+    width: 100%;
+    border-left: none;
+    height: 0;
+  }
+}
+
+.modelbox-content-wrapper {
+  padding-top: $--modelbox-header-height - $--modelbox-common-space-5x;
+
+  max-width: calc(100%);
+  max-width: -webkit-calc(100%);
+}
+
+// 轮播图
+.modelbox-carousel-wrapper {
+  background: url('../assets/img/banner-modelbox.png') no-repeat 80%;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+  padding: 0 $modelbox-content-margin;
+
+  @extend .flex-columns;
+
+  @include media-query($modelbox-on-palm) {
+    background: url('../assets/img/banner-modelbox.png') no-repeat 65%;
+    padding: 0 $modelbox-content-margin-on-palm;
+  }
+
+  .content {
+    max-width: 40%;
+    @extend .flex-rows;
+    gap: $--modelbox-common-space-3x;
+
+    @include media-query($modelbox-on-palm) {
+      max-width: 60%;
+    }
+
+    // 背景渐变透明
+    // background: linear-gradient(to left, $--modelbox-theme-color, white)
+    //   no-repeat;
+
+    .content-header {
+      font-size: $--modelbox-common-font-size-4;
+      font-weight: bold;
+    }
+
+    .content-body {
+      @extend .modelbox-text-overflow;
+
+      font-size: $--modelbox-common-font-size-1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      line-height: $--modelbox-common-line-height-number;
+      color: $--modelbox-common-color-text-secondary !important;
+    }
+  }
+}
+
+// 底部样式
+.modelbox-footer-wrapper {
+  @extend .flex-columns;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - (#{$modelbox-content-margin} * 2));
+  max-width: -webkit-calc(100% - (#{$modelbox-content-margin} * 2));
+
+  @include media-query($modelbox-on-palm) {
+    // flex-row
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $--modelbox-common-space-5x;
+
+    max-width: calc(100% - (#{$modelbox-content-margin-on-palm} * 2));
+    max-width: -webkit-calc(100% - (#{$modelbox-content-margin-on-palm} * 2));
+  }
+
+  // 链接样式
+  a {
+    color: $--modelbox-common-color-text-secondary !important;
+
+    &:hover {
+      color: $--modelbox-common-color-text-link !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+// 底部卡片 样式
+.footer-card {
+  @extend .flex-rows;
+  gap: $--modelbox-common-space-3x;
+
+  @include media-query($modelbox-on-palm) {
+    align-items: center;
+  }
+
+  .footer-card-header {
+    color: $--modelbox-theme-color;
+    font-size: $--modelbox-common-font-size-2 !important;
+    font-weight: bold;
+    margin-bottom: $--modelbox-common-space-3x;
+  }
+
+  .footer-card-body {
+    font-size: $--modelbox-common-font-size-1 !important;
+    color: $--modelbox-common-color-text-secondary !important;
+
+    .item {
+      &:hover {
+        cursor: pointer;
+        color: $--modelbox-common-color-text-link;
+      }
+    }
+  }
+}
+
+.footer-qrcode-wrapper {
+  @extend .flex-columns;
+  gap: $--modelbox-common-space-3x;
+
+  @include media-query($modelbox-on-palm) {
+    // flex-row
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $--modelbox-common-space-5x;
+  }
+}
+
+.modelbox-qrcode {
+  width: 100px;
+
+  background: linear-gradient(
+        to left,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      left top no-repeat,
+    linear-gradient(
+        to bottom,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      left top no-repeat,
+    linear-gradient(
+        to left,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      right top no-repeat,
+    linear-gradient(
+        to bottom,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      right top no-repeat,
+    linear-gradient(
+        to left,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      left bottom no-repeat,
+    linear-gradient(
+        to bottom,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      left bottom no-repeat,
+    linear-gradient(
+        to left,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      right bottom no-repeat,
+    linear-gradient(
+        to left,
+        $--modelbox-common-color-line-active,
+        $--modelbox-common-color-line-active
+      )
+      right bottom no-repeat;
+  background-size: 1px 10px, 10px 1px, 1px 10px, 10px 1px;
+  padding: 5px;
+
+  @include media-query($modelbox-on-palm) {
+    width: 150px;
+  }
+}
+
+// banner
+.banner-container {
+  background-color: $--modelbox-common-color-bg-gray;
+  padding: $--modelbox-common-space-3x;
+
+  .banner-container-header {
+    font-size: $--modelbox-common-font-size-2;
+    color: $--modelbox-common-color-text-primary;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+// banner 卡片
+.banner-card {
+  @extend .flex-rows;
+  align-items: center;
+  gap: $--modelbox-common-space-2x;
+  margin: $--modelbox-common-space-3x;
+  width: 200px;
+
+  // 图片
+  .banner-card-img {
+    width: 80px;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  // 标题
+  .banner-card-header {
+    font-size: $--modelbox-common-font-size-2;
+    // color: $--modelbox-common-color-text-primary;
+    color: $--modelbox-theme-color;
+    text-align: center;
+  }
+
+  // 内容
+  .banner-card-content {
+    font-size: $--modelbox-common-font-size-base;
+    color: $--modelbox-common-color-text-secondary;
+    text-align: center;
+  }
+}
+
+// banner 卡片 2
+.banner-card-2 {
+  @extend .flex-columns;
+  gap: $--modelbox-common-space-2x;
+  margin: $--modelbox-common-space-3x;
+  width: calc(45%);
+
+  @include media-query($modelbox-on-palm) {
+    // flex-row
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $--modelbox-common-space-3x;
+
+    width: calc(80%);
+  }
+
+  // 图片
+  .banner-card-img {
+    width: 600px;
+
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+
+  // 文字
+  .banner-card-text {
+    @extend .flex-rows;
+    gap: $--modelbox-common-space-2x;
+    align-items: flex-start;
+
+    @include media-query($modelbox-on-palm) {
+      // flex-row
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: $--modelbox-common-space-3x;
+    }
+
+    // 标题
+    .banner-card-header {
+      font-size: $--modelbox-common-font-size-2;
+      color: $--modelbox-theme-color;
+      text-align: left;
+
+      @include media-query($modelbox-on-palm) {
+        text-align: center;
+      }
+    }
+
+    // 内容
+    .banner-card-content {
+      font-size: $--modelbox-common-font-size-base;
+      color: $--modelbox-common-color-text-secondary;
+      text-align: left;
+      @extend .modelbox-text-overflow;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      line-height: $--modelbox-common-line-height-number;
+
+      @include media-query($modelbox-on-palm) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.banner-card-align {
+  @extend .flex-columns;
+  gap: $--modelbox-common-space-2x;
+  width: 300px;
+  margin: $--modelbox-common-space-3x;
+
+  // 图片
+  .banner-card-img {
+    height: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .banner-card-text {
+    @extend .flex-rows;
+    gap: $--modelbox-common-space-2x;
+
+    // 标题
+    .banner-card-header {
+      font-size: $--modelbox-common-font-size-2;
+      color: $--modelbox-common-color-text-primary;
+      text-align: left;
+    }
+
+    // 内容
+    .banner-card-content {
+      font-size: $--modelbox-common-font-size-base;
+      color: $--modelbox-common-color-text-secondary;
+      text-align: left;
+    }
+  }
+}
+
+// banner 标题样式
+.banner-title-font {
+  font-size: $--modelbox-common-font-size-3;
+  font-family: HuaweiSansMedium;
+  color: $--modelbox-theme-color;
+  font-weight: 500;
+}
+
+.banner-base {
+  background-color: $--modelbox-common-color-bg-gray;
+  padding: $--modelbox-common-space-10x 0;
+
+  @extend .flex-rows;
+  align-items: center;
+}
+
+// AI 应用开发普遍难点 banner
+.challenge-banner {
+  @extend .banner-base;
+  background-color: white;
+
+  .banner-header {
+    @extend .banner-title-font;
+    text-align: center;
+  }
+
+  .banner-content {
+    @extend .flex-columns;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media-query($modelbox-on-palm) {
+      // flex-row
+      display: flex;
+      display: -webkit-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: $--modelbox-common-space-5x;
+    }
+  }
+
+  // 底部图片
+  .banner-footer {
+    @extend .flex-rows;
+    align-items: center;
+
+    .footer-img {
+      width: calc(80%);
+
+      @include media-query($modelbox-on-palm) {
+        width: calc(100%);
+      }
+    }
+  }
+}
+
+// 圆形banner 卡片
+.banner-card-radius {
+  @extend .flex-rows;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $--modelbox-common-space-6x;
+  border-radius: 50%;
+  padding: $--modelbox-common-space-2x;
+  width: 120px;
+  height: 120px;
+  @extend .banner-title-font;
+  font-size: $--modelbox-common-font-size-1;
+  color: $--modelbox-common-color-text-secondary;
+
+  box-shadow: $--modelbox-common-shadow-2-down;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include media-query($modelbox-on-palm) {
+    border-radius: 0;
+    width: 150px;
+    height: 30px;
+    box-shadow: none;
+  }
+
+  .pin {
+    width: 20px;
+
+    // 不显示图钉
+    @include media-query($modelbox-on-palm) {
+      display: none;
+    }
+  }
+}
+
+.banner-wrapper {
+  padding: 0 $modelbox-content-margin;
+  background-color: $--modelbox-common-color-bg-white-normal !important;
+
+  @include media-query($modelbox-on-palm) {
+    padding: 0;
+  }
+}
+
+// Modelbox 优势 banner
+.advantage-banner {
+  @extend .banner-base;
+
+  .banner-header {
+    @extend .banner-title-font;
+    text-align: center;
+  }
+
+  .banner-content {
+    @extend .flex-columns;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include media-query($modelbox-on-palm) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+// 适用对象 banner
+.intended-for-banner {
+  @extend .banner-base;
+  background-color: $--modelbox-common-color-bg-white-normal !important;
+
+  .banner-header {
+    @extend .banner-title-font;
+    text-align: center;
+  }
+
+  .banner-content {
+    @extend .flex-columns;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include media-query($modelbox-on-palm) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+// 适配 banner
+.compatibility-banner {
+  @extend .banner-base;
+
+  background: url('../assets/img/banner-compatibility-bg-2.jpg') no-repeat
+    center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+  @include media-query($modelbox-on-palm) {
+    height: 650px;
+  }
+
+  .banner-header {
+    @extend .banner-title-font;
+    text-align: center;
+  }
+
+  .banner-content {
+    @extend .flex-columns;
+    align-items: flex-start;
+    width: calc(80%);
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include media-query($modelbox-on-palm) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+// compatibility banner 卡片
+.compatibility-banner-card {
+  @extend .flex-rows;
+  align-items: center;
+  gap: $--modelbox-common-space-2x;
+  min-height: 150px;
+
+  background-color: white;
+  padding: $--modelbox-common-space-3x;
+  box-shadow: $--modelbox-common-shadow-1-down;
+}
+
+// 适配列表
+.compatibility-list {
+  @extend .flex-rows;
+  gap: $--modelbox-common-space-3x;
+  width: 100%;
+}
+
+// 适配列表
+.compatibility-list-item {
+  width: 300px;
+  background-color: $--modelbox-common-color-bg-white-emphasize;
+  text-align: center;
+  padding: $--modelbox-common-space-base $--modelbox-common-space-5x;
+}
+
+.modelbox-button-link {
+  color: white !important;
+  &:hover {
+    color: white !important;
+    text-decoration: none;
+  }
+}
+
+.modelbox-button-link-dark {
+  color: $--modelbox-theme-color !important;
+  &:hover {
+    color: $--modelbox-theme-color !important;
+    text-decoration: none;
+  }
+}
+
+.modelbox-brand {
+  border-bottom: 4px solid $--modelbox-theme-color;
+}
+
+// ICON标题
+.modelbox-brand-text {
+  font-weight: bold;
+  color: $--modelbox-theme-color !important;
+}
+
+// 轮播图标题
+.carousel-caption-title {
+  font-weight: bold;
+  color: $--modelbox-theme-color !important;
+}
+
+.modelbox-nav-item {
+  margin-left: 70px;
+}
+
+// 适用对象 文字排版
+.modelbox-intended-for {
+  @extend .flex-rows;
+  gap: $--modelbox-common-space-3x;
+  justify-content: center;
+}

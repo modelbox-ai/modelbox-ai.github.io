@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%} {{ content }} {%- if site.posts.size > 0 -%}
+
+  <!-- Modelbox 简介 -->
+  {%- include carousel.component.html -%}
+
+  <!-- AI 应用开发普遍难点 -->
+  <div class="banner-wrapper">{%- include common-challenges.html -%}</div>
+
+  <!--ModelBox 优势-->
+  <div class="banner-wrapper" style="background-color: #fafafa !important">
+    {%- include advantages.html -%}
+  </div>
+
+  <!--适用对象-->
+  <div class="banner-wrapper">{%- include intended-for.html -%}</div>
+
+  <!--适配列表-->
+  {%- include compatibility.html -%} {%- endif -%}
+</div>
