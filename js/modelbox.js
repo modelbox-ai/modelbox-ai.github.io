@@ -138,17 +138,28 @@
 			if(dom) {
 				navigateClick(dom);
 			}
-		});		
+		});
+		// 教程course-page
+		let coursePageDom = $('#course-page');
+		coursePageDom.unbind('click').bind('click', e => {
+			const newTab = window.open();
+			newTab.opener = null;
+			newTab.location = 'https://space.bilibili.com/503635713/channel/seriesdetail?sid=2130880&ctype=0';
+		});
+
+		// 案例
+		let caseDom = $('#case');
+		caseDom.unbind('click').bind('click', e => {
+			const newTab = window.open();
+			newTab.opener = null;
+			newTab.location = 'http://modelbox-ai.com/modelbox-book/solution/solution.html';
+		});
 		
 		// 立即使用
 		$('#try').unbind('click').bind('click', e => {			
-			$('.navigation-item-page').removeClass('navigation-selected');
-			const navigateClass = ['main-page', 'course-page', 'news-page', 'cases-page'];
-			navigateClass.forEach(item => {
-				$('.' + item).css('display', 'none');
-			});
-			$('.sample-page').css('display', 'block');
-			init();				
+			const newTab = window.open();
+			newTab.opener = null;
+			newTab.location = 'http://modelbox-ai.com/modelbox-book/solution/car-detect.html';		
 		});
 
 		// 拷贝事件
