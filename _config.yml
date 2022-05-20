@@ -23,9 +23,8 @@ email: your-email@example.com
 description: >-
   ModelBox是一套统一的端边云AI应用开发和运行框架的规范，以及在此规范上所实现的运行时框架。
   在此基础上，各参与方可贡献相关的代码、工具、平台、文档等相关内容。
-baseurl: '' # the subpath of your site, e.g. /blog
-# the base hostname & protocol for your site, e.g. http://example.com
-url: 'https://skychasehsu.github.io/modelbox-ai-develop.github.io/'
+baseurl: 'http://modelbox-ai.com/'
+url: 'http://modelbox-ai.com/'
 
 # ModelBox Icon
 favicon: modelbox-icon.svg
