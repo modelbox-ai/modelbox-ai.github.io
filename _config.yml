@@ -1,0 +1,83 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: ModelBox
+email: your-email@example.com
+description: >-
+  ModelBox是一套统一的端边云AI应用开发和运行框架的规范，以及在此规范上所实现的运行时框架。
+  在此基础上，各参与方可贡献相关的代码、工具、平台、文档等相关内容。
+baseurl: '' # the subpath of your site, e.g. /blog
+# the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://skychasehsu.github.io/modelbox-ai-develop.github.io/'
+
+# ModelBox Icon
+favicon: modelbox-icon.svg
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# 资源路径
+assets:
+  assets_dir: /assets
+  img: /assets/img/
+
+# 本地需修改为locahost:4000/
+# img_path: http://localhost:4000/assets/img/
+# css_path: http://localhost:4000/assets/
+
+img_path: http://modelbox-ai.com/assets/img/
+css_path: http://modelbox-ai.com/assets/
+
+nav-item-docment: Document
+nav-item-lecture: Lecture
+nav-item-code: Code
+nav-item-community: Community
+nav-item-case: Case
+
+# 底部
+footer:
+  resources: 资源
+  helpful-links: 产品链接

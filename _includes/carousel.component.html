@@ -1,0 +1,94 @@
+<script>
+  function useNow() {
+    window.open('https://hub.docker.com/u/modelbox');
+  }
+  function getStarted() {
+    window.open('http://modelbox-ai.com/modelbox-book/');
+  }
+  function tryNow() {
+    window.open(
+      'http://modelbox-ai.com/modelbox-book/solution/car-detect.html',
+    );
+  }
+</script>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li
+      data-target="#carouselExampleCaptions"
+      data-slide-to="0"
+      class="active"
+    ></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{{ 'carousel-1.jpg' | prepend: site.img_path }}"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="row">
+        <div
+          class="carousel-caption d-none d-md-block text-left text-dark col-5"
+          style="top: 50%; transform: translateY(-50%)"
+        >
+          <h5 class="carousel-caption-title">
+            {{ site.title | escape }}
+          </h5>
+          <p>{{ site.description | escape }}</p>
+          <div class="button-group">
+            <button class="button-primary-light" onclick="useNow()">
+              {{ site.data.locale.useNow }}
+            </button>
+            <button class="button-primary-dark" onclick="getStarted()">
+              {{ site.data.locale.getStarted }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{{ 'carousel-2-compressed.jpg' | prepend: site.img_path }}"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="row">
+        <div
+          class="carousel-caption d-none d-md-block text-left text-dark col-5"
+          style="top: 50%; transform: translateY(-50%)"
+        >
+          <h5 class="carousel-caption-title">
+            {{ site.data.locale.EfficientDevelopment }}
+          </h5>
+          <p>
+            {{ site.data.locale.EfficientDevelopmentDetail }}
+          </p>
+          <div class="button-group">
+            <button class="button-primary-light" onclick="tryNow()">
+              {{ site.data.locale.tryNow }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-target="#carouselExampleControls"
+    data-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-target="#carouselExampleControls"
+    data-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>

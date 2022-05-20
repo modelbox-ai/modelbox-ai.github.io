@@ -1,0 +1,52 @@
+<footer class="site-footer h-card footer-box">
+  <div class="modelbox-footer-wrapper">
+    <!-- TODO 开发文档链接 视频教程链接 -->
+      <!--资源-->
+      <div class="footer-card">
+        {%- if site.data.resources -%}
+          <div class="footer-card-header">{{ site.footer.resources | escape }}</div>
+          <div class="footer-card-body">
+            {%- for item in site.data.resources -%}
+            <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <!--产品链接-->
+      <div class="footer-card">
+        {%- if site.data.helpful-links -%}
+        <div class="footer-card-header">{{ site.footer.helpful-links | escape }}</div>
+        <div class="footer-card-body">
+          {%- for item in site.data.helpful-links -%}
+          <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </div>
+
+      <!-- 分割线 -->
+      <div class="modelbox-dividing-line"></div>
+
+      <!-- ModelBox 技术交流群 -->
+      <div class="footer-card">
+        <div class="footer-card-header">{{ site.data.locale.modelboxTechnicalForum }}</div>
+        <div class=" footer-card-body footer-qrcode-wrapper">
+          <img class="modelbox-qrcode" src="{{ 'qr-code1.png' | prepend: site.img_path}}">
+          <div>{{ site.data.locale.communicateAboutDevelopmentIssues }}</div>
+        </div>
+      </div>
+
+      <!-- 华为云 AI 公众号 -->
+      <div class="footer-card">
+        <div class="footer-card-header">{{ site.data.locale.HuaweiCloudAIOfficialAccount }}</div>
+        <div class="footer-card-body footer-qrcode-wrapper">
+          <img class="modelbox-qrcode" src="{{ 'qr-code2.png' | prepend: site.img_path}}">
+          <div>{{ site.data.locale.getTheLatestNewsInAI }}</div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</footer>

@@ -1,0 +1,26 @@
+<!-- 适用对象 -->
+<div class="intended-for-banner">
+  <h5 class="modelbox-banner-header">{{site.data.locale.intendedFor}}</h5>
+
+  {%- if site.data.intented-for -%}
+  <div class="container">
+    <div class="row">
+      {%- for item in site.data.intented-for -%}
+      <div class="col-lg-3 col-md-12">
+        <img
+          class="modelbox-card-img"
+          src="{{item.img | prepend: site.img_path }}"
+        />
+      </div>
+      <div
+        class="col-lg-3 col-md-12 modelbox-intended-for"
+        style="padding: 0 20px"
+      >
+        <h6 class="modelbox-card-header">{{ item.header }}</h6>
+        <div class="modelbox-card-content">{{ item.content }}</div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
+</div>

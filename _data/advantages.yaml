@@ -1,0 +1,24 @@
+# ModelBox 优势
+- header: 高效开发
+  content: 功能模块化，预置丰富模块，可视化编排
+  img: ad-quick.png
+
+- header: 高性能
+  content: 智能调度，计算更高效
+  img: ad-reliability.png
+
+- header: 屏蔽软硬件差异
+  content: 支持多种深度学习框架，运行在异构硬件、多种操作系统上
+  img: ad-same.png
+
+- header: 全场景开发
+  content: 支持视频、语音、文本、NLP场景的AI应用开发
+  img: ad-all.png
+
+- header: 易于集成
+  content: 集成云上对接的组件，云上对接更便捷
+  img: ad-merge.png
+
+- header: 易于维护
+  content: 运行状态、应用、性能实时监控
+  img: ad-maintain.png

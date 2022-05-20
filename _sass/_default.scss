@@ -1,0 +1,64 @@
+@import 'modelbox';
+
+.flex-rows {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $--modelbox-common-space-base;
+}
+
+.flex-columns {
+  display: flex !important;
+  display: -webkit-flex !important;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $--modelbox-common-space-base;
+}
+
+.banner-box {
+  height: 300px;
+}
+
+.compatibility-container {
+  background: url('../assets/img/adjust-list.png') no-repeat center right;
+  background-size: 100%;
+  height: 200px;
+  padding: 0;
+}
+
+// 按鈕组
+.button-group {
+  @extend .flex-columns;
+  gap: $--modelbox-common-space-2x !important;
+}
+
+// 按鈕基础样式
+.button-base {
+  border-radius: 2px;
+  width: 120px;
+  height: 100%;
+  cursor: pointer;
+  height: 100%;
+  padding: $--modelbox-common-space-2x;
+  font-size: $--modelbox-common-font-size-base;
+
+  &:hover {
+    box-shadow: $--modelbox-common-shadow-2-down;
+  }
+}
+
+.button-primary-light {
+  @extend .button-base;
+  background-color: $--modelbox-theme-color;
+  border: 1px solid $--modelbox-theme-color;
+  color: $--modelbox-common-color-text-white;
+}
+
+.button-primary-dark {
+  @extend .button-base;
+  border: 1px solid $--modelbox-theme-color;
+  color: $--modelbox-theme-color;
+}
