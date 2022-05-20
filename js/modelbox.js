@@ -103,7 +103,7 @@
 		$('#gotoInstruction').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = 'http://modelbox-ai.com/modelbox-book';
+			newTab.location = '/modelbox-book';
 		});	
 		// 开发规范
 		$('#gotoSpecification').unbind('click').bind('click', e => {
@@ -115,13 +115,13 @@
 		$('#gotoDevelopDoc').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = 'http://modelbox-ai.com/modelbox-book';
+			newTab.location = '/modelbox-book';
 		});
 		// API
 		$('#gotoAPI').unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = 'http://modelbox-ai.com/modelbox-book/api/api.html';
+			newTab.location = '/modelbox-book/api/api.html';
 		});		
 		$('#gotoGettingStart').unbind('click').bind('click', e => {
 			const newTab = window.open();
@@ -152,14 +152,14 @@
 		caseDom.unbind('click').bind('click', e => {
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = 'http://modelbox-ai.com/modelbox-book/solution/solution.html';
+			newTab.location = '/modelbox-book/solution/solution.html';
 		});
 		
 		// 立即使用
 		$('#try').unbind('click').bind('click', e => {			
 			const newTab = window.open();
 			newTab.opener = null;
-			newTab.location = 'http://modelbox-ai.com/modelbox-book/solution/car-detect.html';		
+			newTab.location = '/modelbox-book/solution/car-detect.html';		
 		});
 
 		// 拷贝事件
