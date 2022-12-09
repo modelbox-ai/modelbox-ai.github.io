@@ -4,23 +4,18 @@
 
   {%- if site.data.intented-for -%}
   <div class="container">
+    {%- for item in site.data.intented-for -%}
     <div class="row">
-      {%- for item in site.data.intented-for -%}
-      <div class="col-lg-3 col-md-12">
-        <img
-          class="modelbox-card-img"
-          src="{{item.img | prepend: site.img_path }}"
-        />
+      <div class="modelbox-intended-img">
+        <img class="modelbox-card-img" src="{{item.img | prepend: site.img_path }}" />
       </div>
-      <div
-        class="col-lg-3 col-md-12 modelbox-intended-for"
-        style="padding: 0 20px"
-      >
+      <div class="modelbox-intended-for" style="padding: 0 20px">
         <h6 class="modelbox-card-header">{{ item.header }}</h6>
         <div class="modelbox-card-content">{{ item.content }}</div>
       </div>
-      {%- endfor -%}
     </div>
+
+    {%- endfor -%}
   </div>
   {%- endif -%}
 </div>

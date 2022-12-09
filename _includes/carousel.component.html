@@ -10,6 +10,11 @@
       '/modelbox-book/first-app/mnist.html',
     );
   }
+  function goNow() {
+    window.open(
+      '/modelbox-book/use-modelbox/standard-mode/flow/flow.html',
+    );
+  }
 </script>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -18,7 +23,9 @@
       data-slide-to="0"
       class="active"
     ></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1">
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -66,6 +73,31 @@
           </p>
           <div class="button-group">
             <button class="button-primary-light" onclick="tryNow()">
+              {{ site.data.locale.tryNow }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{{ 'carousel-3-compressed.jpg' | prepend: site.img_path }}"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="row">
+        <div
+          class="carousel-caption d-none d-md-block text-left text-dark col-5"
+          style="top: 50%; transform: translateY(-50%)"
+        >
+          <h5 class="carousel-caption-title">
+            {{ site.data.locale.DiagramOrchestrationDevelopment }}
+          </h5>
+          <p>
+            {{ site.data.locale.DiagramOrchestrationDevelopmentDetail }}
+          </p>
+          <div class="button-group">
+            <button class="button-primary-light" onclick="goNow()">
               {{ site.data.locale.tryNow }}
             </button>
           </div>
