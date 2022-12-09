@@ -1,5 +1,6 @@
 # compatibility 适配列表
 - title: 硬件适配
+  id: adaptation
   content:
     - title: X86+GPU
     - title: ARM+Ascend芯片
@@ -8,6 +9,7 @@
       tip: 需定制，根据系统..
 
 - title: 推理框架
+  id: frame
   content:
     - title: Tensorflow
     - title: TensorRT
@@ -15,6 +17,7 @@
     - title: Mindspore
 
 - title: 操作系统
+  id: system
   content:
     - title: Ubuntu
     - title: EulerOS

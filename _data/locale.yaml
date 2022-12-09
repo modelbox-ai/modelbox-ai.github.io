@@ -13,3 +13,8 @@ EfficientDevelopment: 高效开发，高性能推理
 EfficientDevelopmentDetail: >-
   基于ModelBox开发镜像高效开发您的AI应用，
   屏蔽底层差异，快速部署至端、边、云上进行高性能推理计算。
+DiagramOrchestrationDevelopment: 图编排开发
+DiagramOrchestrationDevelopmentDetail: >-
+  将业务功能通过功能单元节点串联成图进行运行的开发模式。
+  图编排模式提供了高性能调度引擎和高性能的预置常用功能单元；
+  功能可进行精细拆分，功能单元复用性高。

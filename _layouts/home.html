@@ -9,7 +9,7 @@ layout: default
 
   <!-- Modelbox 简介 -->
   {%- include carousel.component.html -%}
-
+  {%- include introduction.html -%}
   <!-- AI 应用开发普遍难点 -->
   <div class="banner-wrapper">{%- include common-challenges.html -%}</div>
 
@@ -22,5 +22,6 @@ layout: default
   <div class="banner-wrapper">{%- include intended-for.html -%}</div>
 
   <!--适配列表-->
+  {%- include compatibility.mobile.html -%}
   {%- include compatibility.html -%} {%- endif -%}
 </div>

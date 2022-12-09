@@ -1,0 +1,37 @@
+<div class="compatibility-banner-mobile">
+  <h5 class="modelbox-banner-header">{{site.data.locale.compatibility}}</h5>
+
+  {%- if site.data.compatibility -%}
+  <ul id="myTab" class="nav nav-tabs" role="tablist">
+    {%- for item in site.data.compatibility -%}
+    <li class = "nav-item" role="presentation">
+      <button class="nav-link " href=#{{item.id}} data-toggle="tab">{{item.title}}</button>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <div id="myTabContent" class="tab-content">
+    {%- for item in site.data.compatibility -%}
+    <div class="tab-pane fade " id={{item.id}}>
+      <div class="modelbox-card-content">
+        <div class="compatibility-list">
+          {%- for content-item in item.content -%}
+          <div class="compatibility-list-item">{{content-item.title}}</div>
+          {%- endfor -%}
+          <div class="compatibility-list-item">...</div>
+        </div>
+      </div>
+      <!-- <p>{{item.title}}</p> -->
+    </div>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+</div>
+<script>
+ let myTab = document.getElementById('myTab');
+ let buttonNode = myTab.childNodes[0].childNodes[1];
+ buttonNode.setAttribute("class","nav-link active");
+
+ let myTabContent = document.getElementById('myTabContent');
+ myTabContent.firstChild.setAttribute("class","tab-pane fade active show");
+</script>

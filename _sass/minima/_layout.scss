@@ -106,6 +106,7 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  background-color: #fafafa  
 }
 
 .footer-heading {
@@ -148,6 +149,9 @@
 }
 
 @include media-query($on-laptop) {
+  .site-footer{
+    margin-bottom: 50px;
+  }
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (#{$spacing-unit} / 2));

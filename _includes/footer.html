@@ -1,52 +1,86 @@
+<script>
+  function toDocument() {
+    window.open('https://modelbox-ai.com/modelbox-book/');
+  }
+  function toCode() {
+    window.open('https://github.com/modelbox-ai/modelbox');
+  }
+  function toCommunities() {
+    window.open('https://developer.huaweicloud.com/develop/aigallery/article/list');
+  }
+  function toTulorials() {
+    window.open('https://space.bilibili.com/503635713/channel/seriesdetail?sid=2130880&ctype=0');
+  }
+</script>
+
 <footer class="site-footer h-card footer-box">
   <div class="modelbox-footer-wrapper">
     <!-- TODO 开发文档链接 视频教程链接 -->
-      <!--资源-->
-      <div class="footer-card">
-        {%- if site.data.resources -%}
-          <div class="footer-card-header">{{ site.footer.resources | escape }}</div>
-          <div class="footer-card-body">
-            {%- for item in site.data.resources -%}
-            <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
+    <!--资源-->
+    <div class="footer-card-link">
+      {%- if site.data.resources -%}
+      <div class="footer-card-header">{{ site.footer.resources | escape }}</div>
+      <div class="footer-card-body">
+        {%- for item in site.data.resources -%}
+        <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
+        {%- endfor -%}
       </div>
+      {%- endif -%}
+    </div>
 
-      <!--产品链接-->
-      <div class="footer-card">
-        {%- if site.data.helpful-links -%}
-        <div class="footer-card-header">{{ site.footer.helpful-links | escape }}</div>
-        <div class="footer-card-body">
-          {%- for item in site.data.helpful-links -%}
-          <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
-          {%- endfor -%}
-        </div>
-        {%- endif -%}
+    <!--产品链接-->
+    <div class="footer-card-link">
+      {%- if site.data.helpful-links -%}
+      <div class="footer-card-header">{{ site.footer.helpful-links | escape }}</div>
+      <div class="footer-card-body">
+        {%- for item in site.data.helpful-links -%}
+        <p class="item"><a href="{{item.link}}" target="_blank">{{ item.title | escape }}</a></p>
+        {%- endfor -%}
       </div>
+      {%- endif -%}
+    </div>
 
-      <!-- 分割线 -->
-      <div class="modelbox-dividing-line"></div>
+    <!-- 分割线 -->
+    <div class="modelbox-dividing-line"></div>
 
-      <!-- ModelBox 技术交流群 -->
-      <div class="footer-card">
-        <div class="footer-card-header">{{ site.data.locale.modelboxTechnicalForum }}</div>
-        <div class=" footer-card-body footer-qrcode-wrapper">
-          <img class="modelbox-qrcode" src="{{ 'qr-code1.png' | prepend: site.img_path}}">
-          <div>{{ site.data.locale.communicateAboutDevelopmentIssues }}</div>
-        </div>
-      </div>
-
-      <!-- 华为云 AI 公众号 -->
-      <div class="footer-card">
-        <div class="footer-card-header">{{ site.data.locale.HuaweiCloudAIOfficialAccount }}</div>
-        <div class="footer-card-body footer-qrcode-wrapper">
-          <img class="modelbox-qrcode" src="{{ 'qr-code2.png' | prepend: site.img_path}}">
-          <div>{{ site.data.locale.getTheLatestNewsInAI }}</div>
-        </div>
+    <!-- ModelBox 技术交流群 -->
+    <div class="footer-card-qrcode">
+      <div class="footer-card-header">{{ site.data.locale.modelboxTechnicalForum }}</div>
+      <div class=" footer-card-body footer-qrcode-wrapper">
+        <img class="modelbox-qrcode" src="{{ 'qr-code1.png' | prepend: site.img_path}}">
+        <div class="qrcode-description">{{ site.data.locale.communicateAboutDevelopmentIssues }}</div>
       </div>
     </div>
 
+    <!-- 华为云 AI 公众号 -->
+    <div class="footer-card-qrcode">
+      <div class="footer-card-header">{{ site.data.locale.HuaweiCloudAIOfficialAccount }}</div>
+      <div class="footer-card-body footer-qrcode-wrapper">
+        <img class="modelbox-qrcode" src="{{ 'qr-code2.png' | prepend: site.img_path}}">
+        <div class="qrcode-description">{{ site.data.locale.getTheLatestNewsInAI }}</div>
+      </div>
+    </div>
+  </div>
 
+
+  </div>
+</footer>
+
+<footer class="mobile-fixed-footer">
+  <div class="footer-item" onclick="toDocument()">
+    <img class="item-svg" src="{{ 'document.svg' | prepend: site.img_path}}">
+    <span class="item-span">文档</span>
+  </div>
+  <div class="footer-item" onclick="toCode()">
+    <img class="item-svg" src="{{ 'code.svg' | prepend: site.img_path}}">
+    <span class="item-span">代码</span>
+  </div>
+  <div class="footer-item" onclick="toCommunities()">
+    <img class="item-svg" src="{{ 'communities.svg' | prepend: site.img_path}}">
+    <span class="item-span">社区</span>
+  </div>
+  <div class="footer-item" onclick="toTulorials()">
+    <img class="item-svg" src="{{ 'tutorials.svg' | prepend: site.img_path}}">
+    <span class="item-span">教程</span>
   </div>
 </footer>
